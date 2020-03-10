@@ -8,8 +8,7 @@ package array
  */
 
 func PlusOne(digits []int) []int {
-	digitsSize := 0
-	digitsSize = len(digits)
+	digitsSize := len(digits)
 	if digitsSize == 1 {
 		if digits[0] == 9 {
 			return []int{1,0}

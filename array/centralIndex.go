@@ -6,23 +6,21 @@ package array
 如果数组不存在中心索引，那么我们应该返回 -1。如果数组有多个中心索引，那么我们应该返回最靠近左边的那一个。
  */
 
-import "fmt"
-
-func FindCentralIndex(arr []int) int {
-	len := len(arr)
-	for center := 0; center < len; center++ {
-		var leftSum int = 0
-		var rightSum int = 0
-		for left := 0; left < center; left++ {
-			leftSum += arr[left]
+func PivotIndex(nums []int) int {
+	len := len(nums)
+	if len == 1 {
+		return 0
+	}
+	sumTotal := 0
+	sumLeft := 0
+	for i := 0; i < len; i++ {
+		sumTotal += nums[i]
+	}
+	for mid := 0; mid < len; mid++ {
+		if sumLeft * 2 == sumTotal - nums[mid] {
+			return mid
 		}
-		for right := center+1; right < len; right++ {
-			rightSum += arr[right]
-		}
-		fmt.Println("center:", center, ", left:", leftSum, ", right:", rightSum)
-		if leftSum == rightSum {
-			return center
-		}
+		sumLeft += nums[mid]
 	}
 	return -1
 }

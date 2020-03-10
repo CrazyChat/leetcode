@@ -6,6 +6,6 @@ import (
 )
 
 func main() {
-	arr := []int{9,9,9,9,9}
-	fmt.Println(array.PlusOne(arr))
+	arr := []int{1,7,3,6,5,6}
+	fmt.Println(array.PivotIndex(arr))
 }

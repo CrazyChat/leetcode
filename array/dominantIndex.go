@@ -1,7 +1,5 @@
 package array
 
-import "fmt"
-
 /*
 在一个给定的数组nums中，总是存在一个最大元素 。
 查找数组中的最大元素是否至少是数组中每个其他数字的两倍。
@@ -9,8 +7,9 @@ import "fmt"
  */
 
 // 考虑极端情况，第一个值为最大值的时候如何处理
-func DominantIndex(nums []int, numsSize int) int {
-	if numsSize <= 1 {
+func DominantIndex(nums []int) int {
+	len := len(nums)
+	if len <= 1 {
 		return 0
 	}
 	// 找出第一和第二大的数字进行比较
@@ -18,7 +17,7 @@ func DominantIndex(nums []int, numsSize int) int {
 		maxIndex = 0
 		secondIndex = 0
 	)
-	for i := 0; i < numsSize; i++ {
+	for i := 0; i < len; i++ {
 		if nums[maxIndex] < nums[i] {
 			secondIndex = maxIndex
 			maxIndex = i
@@ -26,8 +25,6 @@ func DominantIndex(nums []int, numsSize int) int {
 			secondIndex = i
 		}
 	}
-	fmt.Println("max: ", maxIndex)
-	fmt.Println("second: ", secondIndex)
 	if nums[maxIndex] >= 2*nums[secondIndex] {
 		return maxIndex
 	}

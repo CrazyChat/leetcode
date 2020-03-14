@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3a9c6fb2-5cc7-4af8-83bb-71efdc0ca03d" name="默认更改列表" comment="" />
+    <list default="true" id="3a9c6fb2-5cc7-4af8-83bb-71efdc0ca03d" name="默认更改列表" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sort/bubble.go" beforeDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -9,12 +13,21 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+    <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/sort/bubble.go">
+        <entry file="file://$PROJECT_DIR$/sortMethod/quickSort.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="517">
-              <caret line="23" column="3" selection-start-line="23" selection-start-column="3" selection-end-line="23" selection-end-column="3" />
+            <state relative-caret-position="480">
+              <caret line="20" column="23" lean-forward="true" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/main.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="25" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -49,12 +62,18 @@
         <option value="$PROJECT_DIR$/array/SingleNumber1.go" />
         <option value="$PROJECT_DIR$/array/singleNumbers.go" />
         <option value="$PROJECT_DIR$/array/SingleNumbers2.go" />
-        <option value="$PROJECT_DIR$/main.go" />
         <option value="$PROJECT_DIR$/array/singleNumbers3.go" />
         <option value="$PROJECT_DIR$/structure/reverseList.go" />
         <option value="$PROJECT_DIR$/array/majorityElement.go" />
         <option value="$PROJECT_DIR$/sort/Bubble.go" />
+        <option value="$PROJECT_DIR$/sort/select.go" />
+        <option value="$PROJECT_DIR$/sort/selectInsert.go" />
         <option value="$PROJECT_DIR$/sort/bubble.go" />
+        <option value="$PROJECT_DIR$/sort/insertSort.go" />
+        <option value="$PROJECT_DIR$/sortMethod/selectInsert.go" />
+        <option value="$PROJECT_DIR$/sortMethod/mergeSort.go" />
+        <option value="$PROJECT_DIR$/main.go" />
+        <option value="$PROJECT_DIR$/sortMethod/quickSort.go" />
       </list>
     </option>
   </component>
@@ -82,12 +101,7 @@
             <path>
               <item name="leetcode" type="b2602c69:ProjectViewProjectNode" />
               <item name="leetcode" type="462c0819:PsiDirectoryNode" />
-              <item name="array" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="leetcode" type="b2602c69:ProjectViewProjectNode" />
-              <item name="leetcode" type="462c0819:PsiDirectoryNode" />
-              <item name="structure" type="462c0819:PsiDirectoryNode" />
+              <item name="sortMethod" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -97,6 +111,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultGoTemplateProperty" value="Go File" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="go.gopath.indexing.explicitly.defined" value="true" />
     <property name="go.import.settings.migrated" value="true" />
@@ -133,12 +148,12 @@
     <frame x="0" y="23" width="1440" height="877" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2761087" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27968526" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.35630688" />
+      <window_info active="true" anchor="bottom" id="Find" order="1" visible="true" weight="0.32769832" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.35630688" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -227,16 +242,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-          <folding>
-            <element signature="e#14#70#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/structure/reverseList.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
@@ -251,10 +256,59 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/sort/insertSort.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="18" selection-start-column="18" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/sort/bubble.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="517">
-          <caret line="23" column="3" selection-start-line="23" selection-start-column="3" selection-end-line="23" selection-end-column="3" />
+        <state>
+          <caret column="18" selection-start-column="18" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sort/selectInsert.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="18" selection-start-column="8" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sortMethod/bubble.go">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sortMethod/selectInsert.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="7" column="7" lean-forward="true" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sortMethod/mergeSort.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+          <folding>
+            <element signature="n#!!block;n#MergeSort#0" />
+            <element signature="n#!!block;n#merge#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="25" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sortMethod/quickSort.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="20" column="23" lean-forward="true" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
         </state>
       </provider>
     </entry>

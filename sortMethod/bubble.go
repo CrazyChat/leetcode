@@ -1,4 +1,4 @@
-package sort
+package sortMethod
 
 /*
 时间复杂度：O(N^2)

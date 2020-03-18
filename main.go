@@ -2,12 +2,13 @@ package main
 
 import (
 	"fmt"
-	"github.com/crazychat/leetcode/array"
+	"github.com/crazychat/leetcode/structure"
 )
 
 func main() {
-	arr := []int{7,3,2,1,5,6,4,23}
-	a := array.FindKthLargest(arr, 2)
-	fmt.Println(a)
-	fmt.Println(arr)
+	stack := structure.CreateArrayStack()
+	for i := 0; i < 20; i++ {
+		stack.Push(3)
+	}
+	fmt.Println(stack)
 }

@@ -2,13 +2,9 @@ package main
 
 import (
 	"fmt"
-	"github.com/crazychat/leetcode/structure"
+	"github.com/crazychat/leetcode/everyday"
 )
 
 func main() {
-	stack := structure.CreateArrayStack()
-	for i := 0; i < 20; i++ {
-		stack.Push(3)
-	}
-	fmt.Println(stack)
+	fmt.Println(everyday.LongestPalindrome("abccccdd"))
 }

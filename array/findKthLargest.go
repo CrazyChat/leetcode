@@ -27,8 +27,6 @@ func quick_sort(arr []int, p, r, k int) {
 		return
 	} else if  k < q {
 		quick_sort(arr, p, q-1, k)
-	} else {
-		quick_sort(arr, q+1, r, k)
 	}
 }
 

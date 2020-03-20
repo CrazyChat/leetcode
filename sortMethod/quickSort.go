@@ -17,7 +17,7 @@ func partition(arr []int, p, r int) int {
 	pivot := arr[r]
 	i := p
 	for j := p; j <= r-1; j++ {
-		// < pivot移动i，否则不移动
+		// < pivot移动i，否则不移动i => i停留的位置一直是大于pivot的数字
 		if arr[j] < pivot {
 			arr[i], arr[j] = arr[j], arr[i]
 			i+=1

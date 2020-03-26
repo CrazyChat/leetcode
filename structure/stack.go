@@ -1,41 +1,38 @@
 package structure
 
-type stackValType int
+import "errors"
 
-//type Stack struct {
-//	Val  stackValType
-//	Next *Stack
-//}
+type Stack []interface{}
 
-//func CreateStack() *Stack {
-//	return &Stack{Next: nil}
-//}
-//
-//func (stack *Stack) IsEmpty() bool {
-//	if stack.Next == nil {
-//		return true
-//	}
-//	return false
-//}
-//
-//func (stack *Stack) Push(val stackValType) bool {
-//	newStack := &Stack{ val, stack.Next}
-//	stack.Next = newStack
-//	return true
-//}
-//
-//func (stack *Stack) Pop() (*Stack, error) {
-//	if stack.Next == nil {
-//		return nil, errors.New("stack is empty")
-//	}
-//	val := stack.Next
-//	stack.Next = stack.Next.Next
-//	return val, nil
-//}
-//
-//func (stack *Stack) Top() (*Stack, error) {
-//	if stack.Next == nil {
-//		return nil, errors.New("stack is empty")
-//	}
-//	return stack.Next, nil
-//}
+func (stack Stack) Len() int {
+	return len(stack)
+}
+
+func (stack Stack) Cap() int {
+	return cap(stack)
+}
+
+func (stack *Stack) Push(value interface{}) {
+	*stack = append(*stack, value)
+}
+
+func (stack Stack) Top() (interface{}, error) {
+	if len(stack) == 0 {
+		return nil, errors.New("Out of index, len is 0")
+	}
+	return stack[len(stack)-1], nil
+}
+
+func (stack *Stack) Pop() (interface{}, error) {
+	theStack := *stack
+	if len(theStack) == 0 {
+		return nil, errors.New("Out of index, len is 0")
+	}
+	value := theStack[len(theStack)-1]
+	*stack = theStack[:len(theStack) - 1]
+	return value, nil
+}
+
+func (stack Stack) IsEmpty() bool {
+	return len(stack) == 0
+}

@@ -8,6 +8,10 @@ type LinkedList struct {
 	Val nodeValType
 	Next *LinkedList
 }
+// CreateLinkedList 创建一个链表
+func CreateLinkedList() LinkedList {
+	return LinkedList{0, nil}
+}
 // PrintList 输出链表
 func (head *LinkedList) PrintList() {
 	p := head.Next
@@ -18,7 +22,7 @@ func (head *LinkedList) PrintList() {
 	fmt.Println()
 	return
 }
-// PushNode 链表结尾加入结点, 不可称为环
+// PushNode 链表结尾加入结点, 不可成为环
 func (head *LinkedList) PushNode(new ...*LinkedList) {
 	p := head
 	for p.Next != nil {

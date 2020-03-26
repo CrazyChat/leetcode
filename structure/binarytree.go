@@ -11,13 +11,31 @@ type Node struct {
 }
 
 // PreOrder 前序遍历
-func (tree *Node) PreOrder() {
+func (tree *Node) PreOrderRecursive() {
 	if tree == nil {
 		return
 	}
 	fmt.Println(tree.Data)
-	tree.Left.PreOrder()
-	tree.Right.PreOrder()
+	tree.Left.PreOrderRecursive()
+	tree.Right.PreOrderRecursive()
+}
+// InOrder 中序遍历
+func (tree *Node) InOrderRecursive() {
+	if tree == nil {
+		return
+	}
+	tree.Left.InOrderRecursive()
+	fmt.Println(tree.Data)
+	tree.Right.InOrderRecursive()
+}
+// PostOrder 后续遍历
+func (tree *Node) PostOrderRecursive() {
+	if tree == nil {
+		return
+	}
+	tree.Left.PostOrderRecursive()
+	tree.Right.PostOrderRecursive()
+	fmt.Println(tree.Data)
 }
 // BinarySearchTree 查找结点
 func (tree *Node) BinarySearchTree(data BinarytreeType) *Node {
@@ -107,5 +125,24 @@ func (tree *Node) Delete(data BinarytreeType) *Node {
 	pPre.Right = child
 	return tree
 }
-
-
+//InOrder 中序遍历
+func (tree *Node) InOrder() {
+	if tree == nil {
+		return
+	}
+	p := tree
+	var stack Stack
+	for p != nil || !stack.IsEmpty() {
+		for p != nil {
+			stack.Push(p)
+			p = p.Left
+		}
+		if !stack.IsEmpty() {
+			temp, _ := stack.Pop()
+			// 转化为Node
+			op, _ := temp.(Node)
+			fmt.Printf("%d ", op.Data)
+			p = op.Right
+		}
+	}
+}

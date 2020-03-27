@@ -4,6 +4,11 @@ import "errors"
 
 type Stack []interface{}
 
+func CreateStack() *Stack {
+	var s = Stack{}
+	return &s
+}
+
 func (stack Stack) Len() int {
 	return len(stack)
 }

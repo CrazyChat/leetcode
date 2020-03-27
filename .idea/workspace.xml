@@ -3,9 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="3a9c6fb2-5cc7-4af8-83bb-71efdc0ca03d" name="默认更改列表" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/array/findKthLargest.go" beforeDir="false" afterPath="$PROJECT_DIR$/array/findKthLargest.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sortMethod/quickSort.go" beforeDir="false" afterPath="$PROJECT_DIR$/sortMethod/quickSort.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/structure/stack.go" beforeDir="false" afterPath="$PROJECT_DIR$/structure/stack.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,7 +13,38 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/structure/graph.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="384">
+              <caret line="40" column="23" selection-start-line="40" selection-start-column="23" selection-end-line="40" selection-end-column="23" />
+              <folding>
+                <element signature="e#49#67#0" />
+                <element signature="e#30#46#0" />
+                <element signature="n#!!block;n#AddGraphNode#0" />
+                <element signature="n#!!block;n#AddEdge#0" />
+                <element signature="e#316#323#0" />
+                <element signature="n#!!block;n#String#0" />
+                <element signature="e#662#677#0" />
+                <element signature="n#!!block;n#String#1" />
+                <element signature="e#787#789#0" />
+                <element signature="e#875#910#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/main.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="144">
+              <caret line="6" column="44" lean-forward="true" selection-start-line="6" selection-start-column="44" selection-end-line="6" selection-end-column="44" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -32,6 +62,7 @@
       <find>ValType</find>
       <find>valType</find>
       <find>ListNode</find>
+      <find>Val</find>
     </findStrings>
   </component>
   <component name="GOROOT" path="/usr/local/go" />
@@ -61,19 +92,28 @@
         <option value="$PROJECT_DIR$/array/merge.go" />
         <option value="$PROJECT_DIR$/structure/reverseList.go" />
         <option value="$PROJECT_DIR$/structure/listNode.go" />
-        <option value="$PROJECT_DIR$/structure/linkedList.go" />
-        <option value="$PROJECT_DIR$/structure/stack.go" />
         <option value="$PROJECT_DIR$/structure/arrayStack.go" />
         <option value="$PROJECT_DIR$/structure/list.go" />
         <option value="$PROJECT_DIR$/array/longestPalindrome.go" />
         <option value="$PROJECT_DIR$/everyday/longestPalindrome.go" />
         <option value="$PROJECT_DIR$/array/isPalindrome.go" />
-        <option value="$PROJECT_DIR$/structure/binarytree.go" />
         <option value="$PROJECT_DIR$/array/findKthLargestByHeap.go" />
         <option value="$PROJECT_DIR$/array/findKthLargest.go" />
         <option value="$PROJECT_DIR$/sortMethod/quickSort.go" />
-        <option value="$PROJECT_DIR$/main.go" />
         <option value="$PROJECT_DIR$/array/getLeastNumbers.go" />
+        <option value="$PROJECT_DIR$/structure/linkedList.go" />
+        <option value="$PROJECT_DIR$/structure/cacheLRU.go" />
+        <option value="$PROJECT_DIR$/else/queen.go" />
+        <option value="$PROJECT_DIR$/other/queen.go" />
+        <option value="$PROJECT_DIR$/mix/queen.go" />
+        <option value="$PROJECT_DIR$/structure/testStack.go" />
+        <option value="$PROJECT_DIR$/structure/stack_test.go" />
+        <option value="$PROJECT_DIR$/structure/binarytree.go" />
+        <option value="$PROJECT_DIR$/structure/lru.go" />
+        <option value="$PROJECT_DIR$/structure/stack.go" />
+        <option value="$PROJECT_DIR$/structure/queue.go" />
+        <option value="$PROJECT_DIR$/main.go" />
+        <option value="$PROJECT_DIR$/structure/graph.go" />
       </list>
     </option>
   </component>
@@ -90,7 +130,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -101,17 +140,13 @@
             <path>
               <item name="leetcode" type="b2602c69:ProjectViewProjectNode" />
               <item name="leetcode" type="462c0819:PsiDirectoryNode" />
-              <item name="array" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="leetcode" type="b2602c69:ProjectViewProjectNode" />
-              <item name="leetcode" type="462c0819:PsiDirectoryNode" />
-              <item name="sortMethod" type="462c0819:PsiDirectoryNode" />
+              <item name="structure" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -143,7 +178,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Go Build.go build main.go">
     <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="leetcode" />
       <working_directory value="$PROJECT_DIR$" />
@@ -153,16 +188,94 @@
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
+    <configuration name="TestStack_Pop in github.com/crazychat/leetcode/structure" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="leetcode" />
+      <working_directory value="$PROJECT_DIR$/structure" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="github.com/crazychat/leetcode/structure" />
+      <directory value="$PROJECT_DIR$/" />
+      <filePath value="$PROJECT_DIR$/" />
+      <pattern value="^TestStack_Pop$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestStack_Push in github.com/crazychat/leetcode/structure" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="leetcode" />
+      <working_directory value="$PROJECT_DIR$/structure" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="github.com/crazychat/leetcode/structure" />
+      <directory value="$PROJECT_DIR$/" />
+      <filePath value="$PROJECT_DIR$/" />
+      <pattern value="^TestStack_Push$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestStack_Top in github.com/crazychat/leetcode/structure" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="leetcode" />
+      <working_directory value="$PROJECT_DIR$/structure" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="github.com/crazychat/leetcode/structure" />
+      <directory value="$PROJECT_DIR$/" />
+      <filePath value="$PROJECT_DIR$/" />
+      <pattern value="^TestStack_Top$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestStack_int in github.com/crazychat/leetcode/structure" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="leetcode" />
+      <working_directory value="$PROJECT_DIR$/structure" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="github.com/crazychat/leetcode/structure" />
+      <directory value="$PROJECT_DIR$/" />
+      <filePath value="$PROJECT_DIR$/" />
+      <pattern value="^TestStack_int$" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Go Build.go build main.go" />
+        <item itemvalue="Go Test.TestStack_int in github.com/crazychat/leetcode/structure" />
+        <item itemvalue="Go Test.TestStack_Pop in github.com/crazychat/leetcode/structure" />
+        <item itemvalue="Go Test.TestStack_Top in github.com/crazychat/leetcode/structure" />
+        <item itemvalue="Go Test.TestStack_Push in github.com/crazychat/leetcode/structure" />
       </list>
     </recent_temporary>
   </component>
+  <component name="TestHistory">
+    <history-entry file="TestStack_Len_in_github_com_crazychat_leetcode_structure - 2020.03.26 at 11h 39m 53s.xml">
+      <configuration name="TestStack_Len in github.com/crazychat/leetcode/structure" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestStack_IsEmpty_in_github_com_crazychat_leetcode_structure - 2020.03.26 at 11h 40m 07s.xml">
+      <configuration name="TestStack_IsEmpty in github.com/crazychat/leetcode/structure" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestStack_Cap_in_github_com_crazychat_leetcode_structure - 2020.03.26 at 11h 40m 12s.xml">
+      <configuration name="TestStack_Cap in github.com/crazychat/leetcode/structure" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestStack_Push_in_github_com_crazychat_leetcode_structure - 2020.03.26 at 11h 40m 16s.xml">
+      <configuration name="TestStack_Push in github.com/crazychat/leetcode/structure" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestStack_Top_in_github_com_crazychat_leetcode_structure - 2020.03.26 at 11h 40m 18s.xml">
+      <configuration name="TestStack_Top in github.com/crazychat/leetcode/structure" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestStack_Pop_in_github_com_crazychat_leetcode_structure - 2020.03.26 at 11h 40m 21s.xml">
+      <configuration name="TestStack_Pop in github.com/crazychat/leetcode/structure" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestStack_int_in_github_com_crazychat_leetcode_structure - 2020.03.26 at 11h 47m 47s.xml">
+      <configuration name="TestStack_int in github.com/crazychat/leetcode/structure" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestStack_int_in_github_com_crazychat_leetcode_structure - 2020.03.26 at 11h 48m 56s.xml">
+      <configuration name="TestStack_int in github.com/crazychat/leetcode/structure" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestStack_int_in_github_com_crazychat_leetcode_structure - 2020.03.26 at 11h 49m 42s.xml">
+      <configuration name="TestStack_int in github.com/crazychat/leetcode/structure" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+  </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="877" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2911302" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.30829757" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -177,7 +290,7 @@
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="bottom" id="调试" order="12" />
+      <window_info anchor="bottom" id="调试" order="12" weight="0.32899868" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -303,34 +416,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/structure/reverseList.go" />
-    <entry file="file://$PROJECT_DIR$/structure/linkedList.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2232">
-          <caret line="95" column="22" lean-forward="true" selection-start-line="95" selection-start-column="22" selection-end-line="95" selection-end-column="22" />
-          <folding>
-            <element signature="e#1318#1334#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/structure/stack.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="25" column="2" lean-forward="true" selection-start-line="25" selection-start-column="2" selection-end-line="25" selection-end-column="2" />
-          <folding>
-            <element signature="e#318#329#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/structure/list.go" />
-    <entry file="file://$PROJECT_DIR$/structure/arrayStack.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="14" column="29" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///usr/local/go/src/container/list/list.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
@@ -399,52 +485,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/structure/binarytree.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="101">
-          <caret line="59" column="53" lean-forward="true" selection-start-line="59" selection-start-column="53" selection-end-line="59" selection-end-column="53" />
-          <folding>
-            <element signature="e#35#52#0" />
-            <element signature="n#!!block;n#PreOrder#0" />
-            <element signature="e#263#276#0" />
-            <element signature="n#!!block;n#BinarySearchTree#0" />
-            <element signature="e#438#445#0" />
-            <element signature="e#478#487#0" />
-            <element signature="e#503#512#0" />
-            <element signature="e#546#555#0" />
-            <element signature="n#!!block;n#Insert#0" />
-            <element signature="e#664#671#0" />
-            <element signature="e#640#863#0" />
-            <element signature="e#661#663#0" />
-            <element signature="e#684#695#0" />
-            <element signature="e#695#707#0" />
-            <element signature="e#703#705#0" />
-            <element signature="e#801#812#0" />
-            <element signature="e#821#834#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/array/findKthLargestByHeap.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="19" column="15" selection-start-line="19" selection-start-column="15" selection-end-line="19" selection-end-column="15" />
-          <folding>
-            <element signature="e#15#50#0" expanded="true" />
-            <element signature="n#!!block;n#Pop#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/array/findKthLargestByHeap.go" />
     <entry file="file://$PROJECT_DIR$/go.mod">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/array/findKthLargest.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="29" column="3" lean-forward="true" selection-start-line="29" selection-start-column="3" selection-end-line="29" selection-end-column="3" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/array/getLeastNumbers.go">
       <provider selected="true" editor-type-id="text-editor">
@@ -463,12 +506,170 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/array/findKthLargest.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="287">
+          <caret line="29" column="3" lean-forward="true" selection-start-line="29" selection-start-column="3" selection-end-line="29" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/structure/cacheLRU.go" />
+    <entry file="file://$PROJECT_DIR$/mix/queen.go" />
+    <entry file="file://$PROJECT_DIR$/structure/arrayStack.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="14" column="29" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/structure/stack_test.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="14" column="3" lean-forward="true" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
+          <folding>
+            <element signature="e#19#47#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/structure/linkedList.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="587">
+          <caret line="121" column="31" selection-start-line="121" selection-start-column="31" selection-end-line="121" selection-end-column="31" />
+          <folding>
+            <element signature="n#!!block;n#CreateLinkedList#0" />
+            <element signature="n#!!block;n#PrintList#0" />
+            <element signature="n#!!block;n#PushNode#0" />
+            <element signature="n#!!block;n#PushVal#0" />
+            <element signature="n#!!block;n#HasCycle#0" />
+            <element signature="n#!!block;n#MiddleNode#0" />
+            <element signature="n#!!block;n#MergeTwoLists#0" />
+            <element signature="n#!!block;n#RemoveNthFromEnd#0" />
+            <element signature="n#!!block;n#ReverseList#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/go/src/builtin/builtin.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="74" column="5" selection-start-line="74" selection-start-column="5" selection-end-line="74" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/structure/binarytree.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="77" column="24" selection-start-line="77" selection-start-column="18" selection-end-line="77" selection-end-column="24" />
+          <folding>
+            <element signature="n#!!block;n#PreOrderRecursive#0" />
+            <element signature="e#199#212#0" />
+            <element signature="n#!!block;n#InOrderRecursive#0" />
+            <element signature="e#373#386#0" />
+            <element signature="n#!!block;n#PostOrderRecursive#0" />
+            <element signature="e#549#562#0" />
+            <element signature="n#!!block;n#BinarySearchTree#0" />
+            <element signature="e#768#877#0" />
+            <element signature="e#789#808#0" />
+            <element signature="e#831#851#0" />
+            <element signature="e#857#874#0" />
+            <element signature="n#!!block;n#Insert#0" />
+            <element signature="e#971#1016#0" />
+            <element signature="e#1042#1259#0" />
+            <element signature="e#1063#1158#0" />
+            <element signature="e#1086#1139#0" />
+            <element signature="e#1107#1123#0" />
+            <element signature="e#1164#1256#0" />
+            <element signature="e#1186#1238#0" />
+            <element signature="e#1206#1222#0" />
+            <element signature="n#!!block;n#Delete#0" />
+            <element signature="e#1349#1383#0" />
+            <element signature="e#1443#1523#0" />
+            <element signature="e#1475#1495#0" />
+            <element signature="e#1501#1520#0" />
+            <element signature="e#1537#1573#0" />
+            <element signature="e#1627#1866#0" />
+            <element signature="e#1701#1744#0" />
+            <element signature="e#1935#1956#0" />
+            <element signature="e#1980#2002#0" />
+            <element signature="e#2008#2026#0" />
+            <element signature="e#2043#2075#0" />
+            <element signature="e#2099#2137#0" />
+            <element signature="n#!!block;n#InOrder#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/structure/lru.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="491">
+          <caret line="56" column="46" selection-start-line="56" selection-start-column="46" selection-end-line="56" selection-end-column="46" />
+          <folding>
+            <element signature="n#!!block;n#CreateLruCache#0" />
+            <element signature="n#!!block;n#Get#0" />
+            <element signature="n#!!block;n#Put#0" />
+            <element signature="n#!!block;n#refreshNode#0" />
+            <element signature="n#!!block;n#removeNode#0" />
+            <element signature="n#!!block;n#addNode#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/structure/queue.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="30" column="51" selection-start-line="30" selection-start-column="51" selection-end-line="30" selection-end-column="51" />
+          <folding>
+            <element signature="n#!!block;n#CreateQueue#0" />
+            <element signature="n#!!block;n#Push#0" />
+            <element signature="n#!!block;n#Len#0" />
+            <element signature="n#!!block;n#Cap#0" />
+            <element signature="n#!!block;n#Top#0" />
+            <element signature="n#!!block;n#Pop#0" />
+            <element signature="n#!!block;n#IsEmpty#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/structure/stack.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="11" selection-start-line="11" selection-end-line="42" selection-end-column="1" />
+          <folding>
+            <element signature="n#!!block;n#CreateStack#0" />
+            <element signature="n#!!block;n#Len#0" />
+            <element signature="n#!!block;n#Cap#0" />
+            <element signature="n#!!block;n#Push#0" />
+            <element signature="n#!!block;n#Top#0" />
+            <element signature="n#!!block;n#Pop#0" />
+            <element signature="e#501#556#0" />
+            <element signature="n#!!block;n#IsEmpty#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/main.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="9" column="38" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
+        <state relative-caret-position="144">
+          <caret line="6" column="44" lean-forward="true" selection-start-line="6" selection-start-column="44" selection-end-line="6" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/structure/graph.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="40" column="23" selection-start-line="40" selection-start-column="23" selection-end-line="40" selection-end-column="23" />
           <folding>
-            <element signature="e#14#70#0" expanded="true" />
+            <element signature="e#49#67#0" />
+            <element signature="e#30#46#0" />
+            <element signature="n#!!block;n#AddGraphNode#0" />
+            <element signature="n#!!block;n#AddEdge#0" />
+            <element signature="e#316#323#0" />
+            <element signature="n#!!block;n#String#0" />
+            <element signature="e#662#677#0" />
+            <element signature="n#!!block;n#String#1" />
+            <element signature="e#787#789#0" />
+            <element signature="e#875#910#0" />
           </folding>
         </state>
       </provider>

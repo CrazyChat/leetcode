@@ -1,8 +1,11 @@
 package structure
 
-import "fmt"
+import (
+	"errors"
+	"fmt"
+)
 
-type nodeValType int
+type nodeValType = int
 
 type LinkedList struct {
 	Val nodeValType
@@ -12,15 +15,15 @@ type LinkedList struct {
 func CreateLinkedList() LinkedList {
 	return LinkedList{0, nil}
 }
-// PrintList 输出链表
-func (head *LinkedList) PrintList() {
+// Len 链表长度
+func (head *LinkedList) Len() int {
+	length := 0
 	p := head.Next
 	for p != nil {
-		fmt.Printf("%d ", p.Val)
+		length++
 		p = p.Next
 	}
-	fmt.Println()
-	return
+	return length
 }
 // PushNode 链表结尾加入结点, 不可成为环
 func (head *LinkedList) PushNode(new ...*LinkedList) {
@@ -45,6 +48,45 @@ func (head *LinkedList) PushVal(new ...nodeValType) {
 		p.Next = &LinkedList{v, nil}
 		p = p.Next
 	}
+	return
+}
+// Delete 删除结点
+func (head *LinkedList) Delete(val nodeValType) error {
+	if head.Next == nil {
+		return errors.New("Cann't found the node")
+	}
+	pDeleted := head.Next
+	pDeletedPre := head
+	for pDeleted != nil {
+		if pDeleted.Val == val {
+			pDeletedPre.Next = pDeleted.Next
+			return nil
+		}
+		pDeleted = pDeleted.Next
+		pDeletedPre = pDeletedPre.Next
+	}
+	return errors.New("Cann't found the node")
+}
+// Put 修改结点值
+func (head *LinkedList) Put(val, newVal nodeValType) error {
+	p := head.Next
+	for p != nil {
+		if p.Val == val {
+			p.Val = newVal
+			return nil
+		}
+		p = p.Next
+	}
+	return errors.New("Cann't found the node")
+}
+// PrintList 输出链表
+func (head *LinkedList) PrintList() {
+	p := head.Next
+	for p != nil {
+		fmt.Printf("%d ", p.Val)
+		p = p.Next
+	}
+	fmt.Println()
 	return
 }
 // hasCycle 检查是否有环

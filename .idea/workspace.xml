@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="3a9c6fb2-5cc7-4af8-83bb-71efdc0ca03d" name="默认更改列表" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/structure/stack.go" beforeDir="false" afterPath="$PROJECT_DIR$/structure/stack.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/structure/linkedList.go" beforeDir="false" afterPath="$PROJECT_DIR$/structure/linkedList.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/structure/queue.go" beforeDir="false" afterPath="$PROJECT_DIR$/structure/queue.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,31 +15,46 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/structure/graph.go">
+        <entry file="file://$PROJECT_DIR$/structure/binarytree.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="384">
-              <caret line="40" column="23" selection-start-line="40" selection-start-column="23" selection-end-line="40" selection-end-column="23" />
+            <state relative-caret-position="356">
+              <caret line="77" column="24" selection-start-line="77" selection-start-column="18" selection-end-line="77" selection-end-column="24" />
               <folding>
-                <element signature="e#49#67#0" />
-                <element signature="e#30#46#0" />
-                <element signature="n#!!block;n#AddGraphNode#0" />
-                <element signature="n#!!block;n#AddEdge#0" />
-                <element signature="e#316#323#0" />
-                <element signature="n#!!block;n#String#0" />
-                <element signature="e#662#677#0" />
-                <element signature="n#!!block;n#String#1" />
-                <element signature="e#787#789#0" />
-                <element signature="e#875#910#0" />
+                <element signature="n#!!block;n#PreOrderRecursive#0" />
+                <element signature="e#199#212#0" />
+                <element signature="n#!!block;n#InOrderRecursive#0" />
+                <element signature="e#373#386#0" />
+                <element signature="n#!!block;n#PostOrderRecursive#0" />
+                <element signature="e#549#562#0" />
+                <element signature="n#!!block;n#BinarySearchTree#0" />
+                <element signature="e#768#877#0" />
+                <element signature="e#789#808#0" />
+                <element signature="e#831#851#0" />
+                <element signature="e#857#874#0" />
+                <element signature="n#!!block;n#Insert#0" />
+                <element signature="e#971#1016#0" />
+                <element signature="e#1042#1259#0" />
+                <element signature="e#1063#1158#0" />
+                <element signature="e#1086#1139#0" />
+                <element signature="e#1107#1123#0" />
+                <element signature="e#1164#1256#0" />
+                <element signature="e#1186#1238#0" />
+                <element signature="e#1206#1222#0" />
+                <element signature="n#!!block;n#Delete#0" />
+                <element signature="e#1349#1383#0" />
+                <element signature="e#1443#1523#0" />
+                <element signature="e#1475#1495#0" />
+                <element signature="e#1501#1520#0" />
+                <element signature="e#1537#1573#0" />
+                <element signature="e#1627#1866#0" />
+                <element signature="e#1701#1744#0" />
+                <element signature="e#1935#1956#0" />
+                <element signature="e#1980#2002#0" />
+                <element signature="e#2008#2026#0" />
+                <element signature="e#2043#2075#0" />
+                <element signature="e#2099#2137#0" />
+                <element signature="n#!!block;n#InOrder#0" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/main.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="6" column="44" lean-forward="true" selection-start-line="6" selection-start-column="44" selection-end-line="6" selection-end-column="44" />
             </state>
           </provider>
         </entry>
@@ -101,7 +116,6 @@
         <option value="$PROJECT_DIR$/array/findKthLargest.go" />
         <option value="$PROJECT_DIR$/sortMethod/quickSort.go" />
         <option value="$PROJECT_DIR$/array/getLeastNumbers.go" />
-        <option value="$PROJECT_DIR$/structure/linkedList.go" />
         <option value="$PROJECT_DIR$/structure/cacheLRU.go" />
         <option value="$PROJECT_DIR$/else/queen.go" />
         <option value="$PROJECT_DIR$/other/queen.go" />
@@ -111,9 +125,10 @@
         <option value="$PROJECT_DIR$/structure/binarytree.go" />
         <option value="$PROJECT_DIR$/structure/lru.go" />
         <option value="$PROJECT_DIR$/structure/stack.go" />
-        <option value="$PROJECT_DIR$/structure/queue.go" />
         <option value="$PROJECT_DIR$/main.go" />
         <option value="$PROJECT_DIR$/structure/graph.go" />
+        <option value="$PROJECT_DIR$/structure/linkedList.go" />
+        <option value="$PROJECT_DIR$/structure/queue.go" />
       </list>
     </option>
   </component>
@@ -275,12 +290,12 @@
     <frame x="0" y="23" width="1440" height="877" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.30829757" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.30829757" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info active="true" anchor="bottom" id="Find" order="1" visible="true" weight="0.32769832" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2613784" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.2613784" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -532,24 +547,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/structure/linkedList.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="587">
-          <caret line="121" column="31" selection-start-line="121" selection-start-column="31" selection-end-line="121" selection-end-column="31" />
-          <folding>
-            <element signature="n#!!block;n#CreateLinkedList#0" />
-            <element signature="n#!!block;n#PrintList#0" />
-            <element signature="n#!!block;n#PushNode#0" />
-            <element signature="n#!!block;n#PushVal#0" />
-            <element signature="n#!!block;n#HasCycle#0" />
-            <element signature="n#!!block;n#MiddleNode#0" />
-            <element signature="n#!!block;n#MergeTwoLists#0" />
-            <element signature="n#!!block;n#RemoveNthFromEnd#0" />
-            <element signature="n#!!block;n#ReverseList#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///usr/local/go/src/builtin/builtin.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="243">
@@ -557,9 +554,111 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/main.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="6" column="44" lean-forward="true" selection-start-line="6" selection-start-column="44" selection-end-line="6" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/structure/linkedList.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="69" column="10" selection-start-line="69" selection-start-column="10" selection-end-line="69" selection-end-column="10" />
+          <folding>
+            <element signature="e#71#116#0" />
+            <element signature="n#!!block;n#CreateLinkedList#0" />
+            <element signature="e#199#207#0" />
+            <element signature="n#!!block;n#Len#0" />
+            <element signature="e#445#473#0" />
+            <element signature="n#!!block;n#PushNode#0" />
+            <element signature="e#479#496#0" />
+            <element signature="e#520#550#0" />
+            <element signature="n#!!block;n#PushVal#0" />
+            <element signature="e#870#887#0" />
+            <element signature="e#911#959#0" />
+            <element signature="e#935#943#0" />
+            <element signature="n#!!block;n#Delete#0" />
+            <element signature="e#832#839#0" />
+            <element signature="e#841#848#0" />
+            <element signature="e#861#870#0" />
+            <element signature="n#!!block;n#Put#0" />
+            <element signature="e#1313#1320#0" />
+            <element signature="e#1333#1335#0" />
+            <element signature="n#!!block;n#PrintList#0" />
+            <element signature="e#1372#1416#0" />
+            <element signature="e#1386#1400#0" />
+            <element signature="n#!!block;n#HasCycle#0" />
+            <element signature="e#1033#1053#0" />
+            <element signature="n#!!block;n#MiddleNode#0" />
+            <element signature="e#1269#1316#0" />
+            <element signature="n#!!block;n#MergeTwoLists#0" />
+            <element signature="e#1437#1453#0" />
+            <element signature="e#1467#1483#0" />
+            <element signature="e#1525#1579#0" />
+            <element signature="e#1583#1637#0" />
+            <element signature="n#!!block;n#RemoveNthFromEnd#0" />
+            <element signature="e#1825#1856#0" />
+            <element signature="e#1875#1923#0" />
+            <element signature="n#!!block;n#ReverseList#0" />
+            <element signature="e#2098#2167#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/structure/lru.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-275">
+          <caret line="4" column="12" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="12" />
+          <folding>
+            <element signature="n#!!block;n#CreateLruCache#0" />
+            <element signature="n#!!block;n#Get#0" />
+            <element signature="n#!!block;n#Put#0" />
+            <element signature="n#!!block;n#refreshNode#0" />
+            <element signature="n#!!block;n#removeNode#0" />
+            <element signature="n#!!block;n#addNode#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/structure/graph.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="386">
+          <caret line="40" column="23" selection-start-line="40" selection-start-column="23" selection-end-line="40" selection-end-column="23" />
+          <folding>
+            <element signature="n#!!block;n#AddEdge#0" />
+            <element signature="n#!!block;n#String#0" />
+            <element signature="n#!!block;n#String#1" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/structure/stack.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="40" selection-start-line="40" selection-end-line="40" />
+          <folding>
+            <element signature="n#!!block;n#CreateStack#0" />
+            <element signature="n#!!block;n#Len#0" />
+            <element signature="n#!!block;n#Cap#0" />
+            <element signature="n#!!block;n#Push#0" />
+            <element signature="n#!!block;n#Top#0" />
+            <element signature="n#!!block;n#Pop#0" />
+            <element signature="n#!!block;n#IsEmpty#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/structure/queue.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="792">
+          <caret line="33" column="1" selection-start-line="33" selection-start-column="1" selection-end-line="33" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/structure/binarytree.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
+        <state relative-caret-position="356">
           <caret line="77" column="24" selection-start-line="77" selection-start-column="18" selection-end-line="77" selection-end-column="24" />
           <folding>
             <element signature="n#!!block;n#PreOrderRecursive#0" />
@@ -596,80 +695,6 @@
             <element signature="e#2043#2075#0" />
             <element signature="e#2099#2137#0" />
             <element signature="n#!!block;n#InOrder#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/structure/lru.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="491">
-          <caret line="56" column="46" selection-start-line="56" selection-start-column="46" selection-end-line="56" selection-end-column="46" />
-          <folding>
-            <element signature="n#!!block;n#CreateLruCache#0" />
-            <element signature="n#!!block;n#Get#0" />
-            <element signature="n#!!block;n#Put#0" />
-            <element signature="n#!!block;n#refreshNode#0" />
-            <element signature="n#!!block;n#removeNode#0" />
-            <element signature="n#!!block;n#addNode#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/structure/queue.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="30" column="51" selection-start-line="30" selection-start-column="51" selection-end-line="30" selection-end-column="51" />
-          <folding>
-            <element signature="n#!!block;n#CreateQueue#0" />
-            <element signature="n#!!block;n#Push#0" />
-            <element signature="n#!!block;n#Len#0" />
-            <element signature="n#!!block;n#Cap#0" />
-            <element signature="n#!!block;n#Top#0" />
-            <element signature="n#!!block;n#Pop#0" />
-            <element signature="n#!!block;n#IsEmpty#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/structure/stack.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="11" selection-start-line="11" selection-end-line="42" selection-end-column="1" />
-          <folding>
-            <element signature="n#!!block;n#CreateStack#0" />
-            <element signature="n#!!block;n#Len#0" />
-            <element signature="n#!!block;n#Cap#0" />
-            <element signature="n#!!block;n#Push#0" />
-            <element signature="n#!!block;n#Top#0" />
-            <element signature="n#!!block;n#Pop#0" />
-            <element signature="e#501#556#0" />
-            <element signature="n#!!block;n#IsEmpty#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="6" column="44" lean-forward="true" selection-start-line="6" selection-start-column="44" selection-end-line="6" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/structure/graph.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="40" column="23" selection-start-line="40" selection-start-column="23" selection-end-line="40" selection-end-column="23" />
-          <folding>
-            <element signature="e#49#67#0" />
-            <element signature="e#30#46#0" />
-            <element signature="n#!!block;n#AddGraphNode#0" />
-            <element signature="n#!!block;n#AddEdge#0" />
-            <element signature="e#316#323#0" />
-            <element signature="n#!!block;n#String#0" />
-            <element signature="e#662#677#0" />
-            <element signature="n#!!block;n#String#1" />
-            <element signature="e#787#789#0" />
-            <element signature="e#875#910#0" />
           </folding>
         </state>
       </provider>

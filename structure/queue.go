@@ -2,42 +2,33 @@ package structure
 
 import "errors"
 
-type Queue []interface{}
-
-func CreateQueue() *Queue {
-	var q = Queue{}
-	return &q
+type Queue struct {
+	Cap int
+	Head int
+	Tail int
+	DataSlice []interface{}
 }
-
-func (queue *Queue) Push(value interface{}) {
-	*queue = append(*queue, value)
+// NewQueue 创建一个cap大小的队列
+func NewQueue(capacity int) Queue {
+	return Queue{Cap: capacity, DataSlice: make([]interface{}, capacity)}
 }
-
-func (queue Queue) Len() int {
-	return len(queue)
-}
-
-func (queue Queue) Cap() int {
-	return cap(queue)
-}
-
-func (queue Queue) Front() (interface{}, error) {
-	if len(queue) == 0 {
-		return nil, errors.New("Out of index, len is 0")
+// Enqueue 入队
+func (q *Queue) Enqueue(data interface{}) error {
+	// (Tail + 1) % Cap == Head 表示队列满了
+	if (q.Tail + 1) % q.Cap == q.Head {
+		return errors.New("No Capcaity")
 	}
-	return queue[len(queue)-1], nil
+	q.DataSlice[q.Tail] = data
+	q.Tail = (q.Tail + 1) % q.Cap
+	return nil
 }
-
-func (queue *Queue) Dequeue() (interface{}, error) {
-	theStack := *queue
-	if len(theStack) == 0 {
-		return nil, errors.New("Out of index, len is 0")
+// Dequeue 出队
+func (q *Queue) Dequeue() interface{} {
+	// 如果head == tail 表示队列为空
+	if q.Head == q.Tail {
+		return nil
 	}
-	value := theStack[0]
-	*queue = theStack[1:]
-	return value, nil
-}
-
-func (queue Queue) IsEmpty() bool {
-	return len(queue) == 0
+	temp := q.DataSlice[q.Head]
+	q.Head = (q.Head + 1) % q.Cap
+	return temp
 }

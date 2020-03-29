@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3a9c6fb2-5cc7-4af8-83bb-71efdc0ca03d" name="默认更改列表" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/structure/linkedList.go" beforeDir="false" afterPath="$PROJECT_DIR$/structure/linkedList.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/structure/queue.go" beforeDir="false" afterPath="$PROJECT_DIR$/structure/queue.go" afterDir="false" />
-    </list>
+    <list default="true" id="3a9c6fb2-5cc7-4af8-83bb-71efdc0ca03d" name="默认更改列表" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,11 +10,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/structure/binarytree.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="356">
-              <caret line="77" column="24" selection-start-line="77" selection-start-column="18" selection-end-line="77" selection-end-column="24" />
+            <state relative-caret-position="84">
+              <caret line="127" column="8" selection-start-line="127" selection-start-column="8" selection-end-line="127" selection-end-column="8" />
               <folding>
                 <element signature="n#!!block;n#PreOrderRecursive#0" />
                 <element signature="e#199#212#0" />
@@ -32,14 +28,6 @@
                 <element signature="e#831#851#0" />
                 <element signature="e#857#874#0" />
                 <element signature="n#!!block;n#Insert#0" />
-                <element signature="e#971#1016#0" />
-                <element signature="e#1042#1259#0" />
-                <element signature="e#1063#1158#0" />
-                <element signature="e#1086#1139#0" />
-                <element signature="e#1107#1123#0" />
-                <element signature="e#1164#1256#0" />
-                <element signature="e#1186#1238#0" />
-                <element signature="e#1206#1222#0" />
                 <element signature="n#!!block;n#Delete#0" />
                 <element signature="e#1349#1383#0" />
                 <element signature="e#1443#1523#0" />
@@ -53,7 +41,35 @@
                 <element signature="e#2008#2026#0" />
                 <element signature="e#2043#2075#0" />
                 <element signature="e#2099#2137#0" />
-                <element signature="n#!!block;n#InOrder#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/structure/heap.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="371">
+              <caret line="82" column="19" lean-forward="true" selection-start-line="82" selection-start-column="19" selection-end-line="82" selection-end-column="19" />
+              <folding>
+                <element signature="e#19#46#0" expanded="true" />
+                <element signature="e#29#118#0" />
+                <element signature="n#!!block;n#NewHeap#0" />
+                <element signature="e#178#223#0" />
+                <element signature="n#!!block;n#Count#0" />
+                <element signature="n#!!block;n#Cap#0" />
+                <element signature="n#!!block;n#Insert#0" />
+                <element signature="e#450#463#0" />
+                <element signature="e#576#650#0" />
+                <element signature="n#!!block;n#MoveTop#0" />
+                <element signature="e#733#765#0" />
+                <element signature="n#!!block;n#heapify#0" />
+                <element signature="e#969#1383#0" />
+                <element signature="e#1076#1108#0" />
+                <element signature="e#1193#1229#0" />
+                <element signature="e#1282#1296#0" />
+                <element signature="n#!!block;n#Print#0" />
+                <element signature="n#!!block;n#GetArr#0" />
               </folding>
             </state>
           </provider>
@@ -129,6 +145,7 @@
         <option value="$PROJECT_DIR$/structure/graph.go" />
         <option value="$PROJECT_DIR$/structure/linkedList.go" />
         <option value="$PROJECT_DIR$/structure/queue.go" />
+        <option value="$PROJECT_DIR$/structure/heap.go" />
       </list>
     </option>
   </component>
@@ -295,7 +312,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info active="true" anchor="bottom" id="Find" order="1" visible="true" weight="0.32769832" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.2613784" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.12223667" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -658,8 +675,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/structure/binarytree.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="356">
-          <caret line="77" column="24" selection-start-line="77" selection-start-column="18" selection-end-line="77" selection-end-column="24" />
+        <state relative-caret-position="84">
+          <caret line="127" column="8" selection-start-line="127" selection-start-column="8" selection-end-line="127" selection-end-column="8" />
           <folding>
             <element signature="n#!!block;n#PreOrderRecursive#0" />
             <element signature="e#199#212#0" />
@@ -673,14 +690,6 @@
             <element signature="e#831#851#0" />
             <element signature="e#857#874#0" />
             <element signature="n#!!block;n#Insert#0" />
-            <element signature="e#971#1016#0" />
-            <element signature="e#1042#1259#0" />
-            <element signature="e#1063#1158#0" />
-            <element signature="e#1086#1139#0" />
-            <element signature="e#1107#1123#0" />
-            <element signature="e#1164#1256#0" />
-            <element signature="e#1186#1238#0" />
-            <element signature="e#1206#1222#0" />
             <element signature="n#!!block;n#Delete#0" />
             <element signature="e#1349#1383#0" />
             <element signature="e#1443#1523#0" />
@@ -694,7 +703,33 @@
             <element signature="e#2008#2026#0" />
             <element signature="e#2043#2075#0" />
             <element signature="e#2099#2137#0" />
-            <element signature="n#!!block;n#InOrder#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/structure/heap.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="371">
+          <caret line="82" column="19" lean-forward="true" selection-start-line="82" selection-start-column="19" selection-end-line="82" selection-end-column="19" />
+          <folding>
+            <element signature="e#19#46#0" expanded="true" />
+            <element signature="e#29#118#0" />
+            <element signature="n#!!block;n#NewHeap#0" />
+            <element signature="e#178#223#0" />
+            <element signature="n#!!block;n#Count#0" />
+            <element signature="n#!!block;n#Cap#0" />
+            <element signature="n#!!block;n#Insert#0" />
+            <element signature="e#450#463#0" />
+            <element signature="e#576#650#0" />
+            <element signature="n#!!block;n#MoveTop#0" />
+            <element signature="e#733#765#0" />
+            <element signature="n#!!block;n#heapify#0" />
+            <element signature="e#969#1383#0" />
+            <element signature="e#1076#1108#0" />
+            <element signature="e#1193#1229#0" />
+            <element signature="e#1282#1296#0" />
+            <element signature="n#!!block;n#Print#0" />
+            <element signature="n#!!block;n#GetArr#0" />
           </folding>
         </state>
       </provider>

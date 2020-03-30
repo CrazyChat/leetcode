@@ -6,6 +6,6 @@ import (
 )
 
 func main() {
-	b := leetcodestr.CheckInclusion("ab", "ohvhabjdml")
+	b := leetcodestr.CheckInclusion("a", "ab")
 	fmt.Print(b)
 }

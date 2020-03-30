@@ -1,9 +1,6 @@
 package structure
 
-import (
-	"errors"
-	"fmt"
-)
+import "errors"
 
 type Heap struct {
 	cap int	// 堆可以存储的最大数据个数
@@ -13,14 +10,6 @@ type Heap struct {
 // NewHeap 返回一个新堆
 func NewHeap(cap int) Heap {
 	return Heap{cap: cap, count: 0, arr: make([]int, cap+1)}
-}
-// Count 返回heap的个数
-func (heap *Heap) Count() int {
-	return len(heap.arr)
-}
-// Cap 返回heap的容量
-func (heap *Heap) Cap() int {
-	return cap(heap.arr)
 }
 // Insert 插入一个结点
 func (heap *Heap) Insert(v int) {
@@ -37,7 +26,7 @@ func (heap *Heap) Insert(v int) {
 	}
 }
 // MoveTop 删除Top结点
-func (heap *Heap) MoveTop(v int) error {
+func (heap *Heap) MoveTop() error {
 	if heap.count == 0 {
 		return errors.New("没有数据")
 	}
@@ -46,6 +35,10 @@ func (heap *Heap) MoveTop(v int) error {
 	heap.count--
 	heapify(heap.arr, heap.count, 1)
 	return nil
+}
+// GetArr 获取堆的数组
+func (heap *Heap) GetArr() []int {
+	return heap.arr[1:]
 }
 // heapify 自上往下堆化
 func heapify(arr []int, length int, startIndex int) {
@@ -67,18 +60,14 @@ func heapify(arr []int, length int, startIndex int) {
 		startIndex = maxPos
 	}
 }
-// Print 获取堆的结点数组
-func (heap *Heap) Print() {
-	for i := 1; i <= heap.count; i++ {
-		fmt.Printf("%d ", heap.arr[i])
-	}
-	fmt.Println()
+// Count 返回heap的个数
+func (heap *Heap) Count() int {
+	return len(heap.arr)
 }
-// GetArr 获取堆的结点数组
-func (heap *Heap) GetArr() []int {
-	return heap.arr
+// Cap 返回heap的容量
+func (heap *Heap) Cap() int {
+	return cap(heap.arr)
 }
-
 //func main() {
 //	h := NewHeap(5)
 //	for i := 0; i < 5; i++ {

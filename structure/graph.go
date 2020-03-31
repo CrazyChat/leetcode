@@ -48,32 +48,42 @@ func (g *Graph) ShowGraph() {
 	}
 }
 // BFS 广度搜索
-func (g *Graph) BFS(start int) {
+func (g *Graph) BFS(start, end int) {
 	visited := map[GraphNode]bool{} // 以及访问的结点
 	waitVisit := []*GraphNode{} // 等待访问的结点
 	startNode := GraphNode{start}
-	fmt.Printf("%d", start)
-
+	fmt.Printf("%d\n", start)
 	visited[startNode] = true
+	// 输出第一层关系
 	for _, node := range g.edges[startNode] {
-		fmt.Printf(", %d", node.Value)
+		fmt.Printf("%d ", node.Value)
+		if node.Value == end {
+			return
+		}
 		visited[*node] = true
 		waitVisit = append(waitVisit, node)
 	}
+	fmt.Printf("\n")
 	// 循环waitVisit 直到没有待访问的Node
 	for {
-		node := waitVisit[0]
-		for _, newNode := range g.edges[*node] {
-			if _, ok := visited[*newNode]; ok {
-				continue
+		tempWaitVisit := []*GraphNode{}
+		for _, val := range waitVisit {
+			for _, newNode := range g.edges[*val] {
+				if _, ok := visited[*newNode]; ok {
+					continue
+				}
+				fmt.Printf("%d ", newNode.Value)
+				if newNode.Value == end {
+					return
+				}
+				visited[*newNode] = true
+				if len(waitVisit) == 1 {
+					return
+				}
+				tempWaitVisit = append(tempWaitVisit, newNode)
 			}
-			fmt.Printf(", %d", newNode.Value)
-			visited[*newNode] = true
-			waitVisit = append(waitVisit, newNode)
 		}
-		if len(waitVisit) == 1 {
-			return
-		}
-		waitVisit = waitVisit[1:]
+		fmt.Printf("\n")
+		waitVisit = tempWaitVisit
 	}
 }

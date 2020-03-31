@@ -10,7 +10,5 @@ func main() {
 	newGraph.AddEdge(1,3)
 	newGraph.AddEdge(4,3)
 	newGraph.AddEdge(2,4)
-	newGraph.AddEdge(3,6)
-	newGraph.AddEdge(3,5)
-	newGraph.ShowGraph()
+	newGraph.BFS(1)
 }

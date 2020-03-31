@@ -17,13 +17,12 @@ type Graph struct {
 func NewGraph() *Graph {
 	return &Graph{[]GraphNode{}, map[GraphNode][]*GraphNode{} }
 }
-
+// AddNode 增加结点
 func (g *Graph) AddNode(val int) {
 	node := GraphNode{val}
 	g.nodes = append(g.nodes, node)
 }
-
-// 增加边
+// AddEdge 增加边
 func (g *Graph) AddEdge(start, end int) {
 	startNode := GraphNode{start}
 	endNode := GraphNode{end}
@@ -36,8 +35,7 @@ func (g *Graph) AddEdge(start, end int) {
 	g.edges[startNode] = append(g.edges[startNode], &endNode)
 	g.edges[endNode] = append(g.edges[endNode], &startNode)
 }
-
-// 输出邻接表图
+// ShowGraph 输出邻接表图结构
 func (g *Graph) ShowGraph() {
 	fmt.Println(g.nodes)
 	for i := 0; i < len(g.nodes); i++ {
@@ -49,7 +47,33 @@ func (g *Graph) ShowGraph() {
 		fmt.Printf("\n")
 	}
 }
+// BFS 广度搜索
+func (g *Graph) BFS(start int) {
+	visited := map[GraphNode]bool{} // 以及访问的结点
+	waitVisit := []*GraphNode{} // 等待访问的结点
+	startNode := GraphNode{start}
+	fmt.Printf("%d", start)
 
-func (g *Graph) String() {
-
+	visited[startNode] = true
+	for _, node := range g.edges[startNode] {
+		fmt.Printf(", %d", node.Value)
+		visited[*node] = true
+		waitVisit = append(waitVisit, node)
+	}
+	// 循环waitVisit 直到没有待访问的Node
+	for {
+		node := waitVisit[0]
+		for _, newNode := range g.edges[*node] {
+			if _, ok := visited[*newNode]; ok {
+				continue
+			}
+			fmt.Printf(", %d", newNode.Value)
+			visited[*newNode] = true
+			waitVisit = append(waitVisit, newNode)
+		}
+		if len(waitVisit) == 1 {
+			return
+		}
+		waitVisit = waitVisit[1:]
+	}
 }

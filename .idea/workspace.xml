@@ -22,14 +22,13 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/structure/graph.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+            <state relative-caret-position="389">
+              <caret line="76" column="29" lean-forward="true" selection-start-line="76" selection-start-column="29" selection-end-line="76" selection-end-column="29" />
               <folding>
                 <element signature="e#61#82#0" />
-                <element signature="e#87#106#0" />
                 <element signature="n#!!block;n#NewGraph#0" />
                 <element signature="e#223#267#0" />
                 <element signature="n#!!block;n#AddNode#0" />
@@ -41,17 +40,16 @@
                 <element signature="e#842#861#0" />
                 <element signature="e#903#946#0" />
                 <element signature="e#917#942#0" />
-                <element signature="n#!!block;n#String#1" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.go">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="264">
-              <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
+              <caret line="11" column="23" lean-forward="true" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
               <folding>
                 <element signature="e#14#70#0" expanded="true" />
               </folding>
@@ -308,7 +306,7 @@
     <frame x="0" y="23" width="1440" height="877" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3125894" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.3125894" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -335,7 +333,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32769832" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.27178153" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.24317296" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -343,7 +341,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32899868" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="调试" order="12" weight="0.32899868" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -422,53 +420,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/structure/reverseList.go" />
     <entry file="file://$PROJECT_DIR$/structure/list.go" />
-    <entry file="file:///usr/local/go/src/container/list/list.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
-          <folding>
-            <element signature="e#419#874#0" />
-            <element signature="e#956#1039#0" />
-            <element signature="e#1125#1208#0" />
-            <element signature="e#1179#1194#0" />
-            <element signature="e#1554#1624#0" />
-            <element signature="e#1679#1706#0" />
-            <element signature="e#1809#1825#0" />
-            <element signature="e#1933#1989#0" />
-            <element signature="e#1950#1967#0" />
-            <element signature="e#2094#2150#0" />
-            <element signature="e#2111#2128#0" />
-            <element signature="e#2228#2270#0" />
-            <element signature="e#2253#2268#0" />
-            <element signature="e#2382#2480#0" />
-            <element signature="e#2622#2666#0" />
-            <element signature="e#2779#2931#0" />
-            <element signature="e#3023#3174#0" />
-            <element signature="e#3037#3052#0" />
-            <element signature="e#3352#3544#0" />
-            <element signature="e#3370#3526#0" />
-            <element signature="e#3683#3734#0" />
-            <element signature="e#3870#3925#0" />
-            <element signature="e#4176#4309#0" />
-            <element signature="e#4197#4214#0" />
-            <element signature="e#4557#4685#0" />
-            <element signature="e#4578#4595#0" />
-            <element signature="e#4871#5001#0" />
-            <element signature="e#4909#4922#0" />
-            <element signature="e#5184#5318#0" />
-            <element signature="e#5222#5235#0" />
-            <element signature="e#5548#5634#0" />
-            <element signature="e#5597#5610#0" />
-            <element signature="e#5861#5942#0" />
-            <element signature="e#5910#5923#0" />
-            <element signature="e#6120#6249#0" />
-            <element signature="e#6205#6247#0" />
-            <element signature="e#6430#6554#0" />
-            <element signature="e#6514#6552#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/array/isPalindrome.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
@@ -798,23 +749,55 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.go">
+    <entry file="file:///usr/local/go/src/container/list/list.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
+        <state relative-caret-position="-943">
+          <caret line="38" column="18" selection-start-line="38" selection-start-column="18" selection-end-line="38" selection-end-column="18" />
           <folding>
-            <element signature="e#14#70#0" expanded="true" />
+            <element signature="e#419#874#0" />
+            <element signature="e#956#1039#0" />
+            <element signature="e#1125#1208#0" />
+            <element signature="e#1179#1194#0" />
+            <element signature="e#1554#1624#0" />
+            <element signature="e#2094#2150#0" />
+            <element signature="e#2111#2128#0" />
+            <element signature="e#2228#2270#0" />
+            <element signature="e#2253#2268#0" />
+            <element signature="e#2382#2480#0" />
+            <element signature="e#2622#2666#0" />
+            <element signature="e#2779#2931#0" />
+            <element signature="e#3023#3174#0" />
+            <element signature="e#3037#3052#0" />
+            <element signature="e#3352#3544#0" />
+            <element signature="e#3370#3526#0" />
+            <element signature="e#3683#3734#0" />
+            <element signature="e#3870#3925#0" />
+            <element signature="e#4176#4309#0" />
+            <element signature="e#4197#4214#0" />
+            <element signature="e#4557#4685#0" />
+            <element signature="e#4578#4595#0" />
+            <element signature="e#4871#5001#0" />
+            <element signature="e#4909#4922#0" />
+            <element signature="e#5184#5318#0" />
+            <element signature="e#5222#5235#0" />
+            <element signature="e#5548#5634#0" />
+            <element signature="e#5597#5610#0" />
+            <element signature="e#5861#5942#0" />
+            <element signature="e#5910#5923#0" />
+            <element signature="e#6120#6249#0" />
+            <element signature="e#6205#6247#0" />
+            <element signature="e#6430#6554#0" />
+            <element signature="e#6514#6552#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/structure/graph.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+        <state relative-caret-position="389">
+          <caret line="76" column="29" lean-forward="true" selection-start-line="76" selection-start-column="29" selection-end-line="76" selection-end-column="29" />
           <folding>
             <element signature="e#61#82#0" />
-            <element signature="e#87#106#0" />
             <element signature="n#!!block;n#NewGraph#0" />
             <element signature="e#223#267#0" />
             <element signature="n#!!block;n#AddNode#0" />
@@ -826,7 +809,16 @@
             <element signature="e#842#861#0" />
             <element signature="e#903#946#0" />
             <element signature="e#917#942#0" />
-            <element signature="n#!!block;n#String#1" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="11" column="23" lean-forward="true" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
+          <folding>
+            <element signature="e#14#70#0" expanded="true" />
           </folding>
         </state>
       </provider>

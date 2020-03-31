@@ -6,6 +6,5 @@ import (
 )
 
 func main() {
-	b := leetcodestr.CheckInclusion("a", "ab")
-	fmt.Print(b)
+	fmt.Println(leetcodestr.SimplifyPath("/a/b/..//c"))
 }

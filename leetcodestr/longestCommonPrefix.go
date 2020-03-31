@@ -10,7 +10,11 @@ package leetcodestr
 LeetCode 14
 链接：https://leetcode-cn.com/problems/longest-common-prefix
  */
-// 1 垂直扫描法
+/* 1 垂直扫描法
+时间复杂度：O(S)O(S)，S 是所有字符串中字符数量的总和
+空间复杂度：O(1)O(1)
+ */
+
 //func LongestCommonPrefix(strs []string) string {
 //	length := len(strs)
 //	if length == 0 { return "" }
@@ -25,7 +29,11 @@ LeetCode 14
 //	}
 //	return prefix
 //}
-// 2 水平扫描法
+/* 2 水平扫描法
+时间复杂度： O(S)，S 是所有字符串中字符数量的总和
+空间复杂度：O(1)O(1)
+ */
+
 func LongestCommonPrefix(strs []string) string {
 	length := len(strs)
 	if length == 0 { return "" }

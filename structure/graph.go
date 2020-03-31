@@ -47,6 +47,38 @@ func (g *Graph) ShowGraph() {
 		fmt.Printf("\n")
 	}
 }
+// BFS 广度优先遍历
+func (g *Graph) BFS(start int) {
+	visited := map[GraphNode]bool{} // 以及访问的结点
+	waitVisit := []*GraphNode{} // 等待访问的结点
+	startNode := GraphNode{start}
+	fmt.Printf("%d ", start)
+	visited[startNode] = true
+	waitVisit = append(waitVisit, &startNode)
+	for {
+		node := waitVisit[0]
+		for _, subNode := range g.edges[*node] {
+			if _, ok := visited[*subNode]; ok {
+				continue
+			}
+			fmt.Printf("%d ", subNode.Value)
+			visited[*subNode] = true
+			waitVisit = append(waitVisit, subNode)
+		}
+		if len(waitVisit) == 1 {
+			return
+		}
+		waitVisit = waitVisit[1:]
+	}
+}
+// DFS 深度优先遍历
+func (g *Graph) DFS(start, end int) {
+	// 1. 记录所有结点未被访问的结点
+
+	// 2. 从start开始，访问结点，访问过的结点从map中删除
+
+	// 3.
+}
 // BFS 广度搜索，开始 -> 结束
 func (g *Graph) BFSLayer(start, end int) {
 	visited := map[GraphNode]bool{} // 以及访问的结点
@@ -87,31 +119,7 @@ func (g *Graph) BFSLayer(start, end int) {
 		waitVisit = tempWaitVisit
 	}
 }
-// BFS 广度优先遍历
-func (g *Graph) BFS(start int) {
-	visited := map[GraphNode]bool{} // 以及访问的结点
-	waitVisit := []*GraphNode{} // 等待访问的结点
-	startNode := GraphNode{start}
-	fmt.Printf("%d ", start)
-	visited[startNode] = true
-	waitVisit = append(waitVisit, &startNode)
-	for {
-		node := waitVisit[0]
-		for _, subNode := range g.edges[*node] {
-			if _, ok := visited[*subNode]; ok {
-				continue
-			}
-			fmt.Printf("%d ", subNode.Value)
-			visited[*subNode] = true
-			waitVisit = append(waitVisit, subNode)
-		}
-		if len(waitVisit) == 1 {
-			return
-		}
-		waitVisit = waitVisit[1:]
-	}
-}
-// DFS 深度搜索
-func (g *Graph) DFS(start, end int) {
+// DFS 深度搜索，开始 -> 结束
+func (g *Graph) DFSLoad(start, end int) {
 
 }

@@ -1,7 +1,6 @@
 package array
 
 import (
-	"fmt"
 	"github.com/crazychat/leetcode/sortMethod"
 )
 
@@ -10,8 +9,12 @@ import (
  */
 
 /*
-时间复杂度：
-空间复杂度：
+时间复杂度：O(n^2)
+-> 数组排序 O(NlogN)
+-> 遍历数组 O(n)
+-> 双指针遍历 O(n)
+-> 总体：O(NlogN)+O(n)*O(n) = O(n^2)
+空间复杂度：1
  */
 func ThreeSum(nums []int) [][]int {
 	// 长度小于3不满足
@@ -21,7 +24,6 @@ func ThreeSum(nums []int) [][]int {
 	}
 	// 排序
 	sortMethod.QuickSort(nums)
-	fmt.Println("nums: ", nums)
 	// i从0开始遍历到length-2，l = i+1, r = len-1
 	var res [][]int
 	for i := 0; i < length - 2; i++ {
@@ -51,6 +53,7 @@ func ThreeSum(nums []int) [][]int {
 				// > 0 说明右边的数太大了
 				right--
 			} else {
+				// < 0 说明左边的数太小了
 				left++
 			}
 		}

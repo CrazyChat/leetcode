@@ -6,6 +6,7 @@ import (
 )
 
 func main() {
-	arr := array.ThreeSum([]int{-1,0,1,2,-1,-4})
-	fmt.Println(arr)
+	arr := [][]int{{0,1}}
+	num := array.MaxAreaOfIsland(arr)
+	fmt.Println(num)
 }

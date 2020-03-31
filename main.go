@@ -1,11 +1,16 @@
 package main
 
 import (
-	"fmt"
-	"github.com/crazychat/leetcode/array"
+	"github.com/crazychat/leetcode/structure"
 )
 
 func main() {
-	arr := array.TwoSum([]int{2,2,5,7}, 7)
-	fmt.Println(arr)
+	newGraph := structure.NewGraph()
+	newGraph.AddEdge(1,2)
+	newGraph.AddEdge(1,3)
+	newGraph.AddEdge(4,3)
+	newGraph.AddEdge(2,4)
+	newGraph.AddEdge(3,6)
+	newGraph.AddEdge(3,5)
+	newGraph.ShowGraph()
 }

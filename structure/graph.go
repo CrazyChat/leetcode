@@ -2,53 +2,54 @@ package structure
 
 import (
 	"fmt"
-	"sync"
 )
 
+// 无向图
 type GraphNode struct {
 	Value int
 }
 
 type Graph struct {
-	nodes []*GraphNode			// 所有节点
+	nodes []GraphNode			// 所有节点
 	edges map[GraphNode][]*GraphNode	// 邻接表表示的无向图
-	lock sync.RWMutex				// 保证线程安全
 }
 
-func (g *Graph) AddNode(n *GraphNode) {
-	g.lock.Lock()
-	defer g.lock.Unlock()
-	g.nodes = append(g.nodes, n)
+func NewGraph() *Graph {
+	return &Graph{[]GraphNode{}, map[GraphNode][]*GraphNode{} }
+}
+
+func (g *Graph) AddNode(val int) {
+	node := GraphNode{val}
+	g.nodes = append(g.nodes, node)
 }
 
 // 增加边
-func (g *Graph) AddEdge(start, end *GraphNode) {
-	g.lock.Lock()
-	defer g.lock.Unlock()
-	// 首次建立图
-	if g.edges == nil {
-		g.edges = make(map[GraphNode][]*GraphNode)
+func (g *Graph) AddEdge(start, end int) {
+	startNode := GraphNode{start}
+	endNode := GraphNode{end}
+	if _, ok := g.edges[startNode]; !ok {
+		g.AddNode(start)
 	}
-	g.edges[*start] = append(g.edges[*start], end)
-	g.edges[*end] = append(g.edges[*end], start)
+	if _, ok := g.edges[endNode]; !ok {
+		g.AddNode(end)
+	}
+	g.edges[startNode] = append(g.edges[startNode], &endNode)
+	g.edges[endNode] = append(g.edges[endNode], &startNode)
 }
 
 // 输出邻接表图
-func (g *GraphNode) String() string {
-	return fmt.Sprintf("%v", g.Value)
+func (g *Graph) ShowGraph() {
+	fmt.Println(g.nodes)
+	for i := 0; i < len(g.nodes); i++ {
+		node := g.nodes[i]
+		fmt.Printf("%d ", node.Value)
+		for _, subNode := range g.edges[node] {
+			fmt.Printf("-> %d ", subNode.Value)
+		}
+		fmt.Printf("\n")
+	}
 }
 
 func (g *Graph) String() {
-	g.lock.RLock()
-	defer g.lock.RUnlock()
-	str := ""
-	for _, node := range g.nodes {
-		str += node.String() + " -> "
-		nexts := g.edges[*node]
-		for _, next := range nexts {
-			str += next.String() + " "
-		}
-		str += "\n"
-	}
-	fmt.Println(str)
+
 }

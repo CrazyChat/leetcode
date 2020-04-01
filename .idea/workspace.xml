@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3a9c6fb2-5cc7-4af8-83bb-71efdc0ca03d" name="默认更改列表" comment="">
+      <change beforePath="$PROJECT_DIR$/array/longestConsecutive.go" beforeDir="false" afterPath="$PROJECT_DIR$/array/longestConsecutive.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -13,10 +14,10 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/array/longestConsecutive.go">
+        <entry file="file://$PROJECT_DIR$/array/permute.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="463">
-              <caret line="46" column="18" lean-forward="true" selection-start-line="18" selection-start-column="2" selection-end-line="46" selection-end-column="18" />
+            <state relative-caret-position="385">
+              <caret line="31" column="26" selection-start-line="31" selection-start-column="26" selection-end-line="31" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -25,7 +26,7 @@
         <entry file="file://$PROJECT_DIR$/main.go">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="192">
-              <caret line="8" column="60" lean-forward="true" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="60" />
+              <caret line="8" column="42" selection-start-line="8" selection-start-column="42" selection-end-line="8" selection-end-column="42" />
               <folding>
                 <element signature="e#14#70#0" expanded="true" />
               </folding>
@@ -65,7 +66,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/sort/selectInsert.go" />
         <option value="$PROJECT_DIR$/sort/bubble.go" />
         <option value="$PROJECT_DIR$/sort/insertSort.go" />
         <option value="$PROJECT_DIR$/sortMethod/selectInsert.go" />
@@ -116,6 +116,7 @@
         <option value="$PROJECT_DIR$/array/findLengthOfLCIS.go" />
         <option value="$PROJECT_DIR$/array/longestConsecutive.go" />
         <option value="$PROJECT_DIR$/main.go" />
+        <option value="$PROJECT_DIR$/array/permute.go" />
       </list>
     </option>
   </component>
@@ -181,7 +182,7 @@
     </option>
   </component>
   <component name="RunManager" selected="Go Build.go build main.go">
-    <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" nameIsGenerated="true">
       <module name="leetcode" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="FILE" />
@@ -236,7 +237,6 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Go Build.go build main.go" />
         <item itemvalue="Go Test.TestStack_int in github.com/crazychat/leetcode/structure" />
         <item itemvalue="Go Test.TestStack_Pop in github.com/crazychat/leetcode/structure" />
         <item itemvalue="Go Test.TestStack_Top in github.com/crazychat/leetcode/structure" />
@@ -277,12 +277,12 @@
     <frame x="0" y="23" width="1440" height="877" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3125894" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21387696" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32769832" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.22626787" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.23016906" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -329,13 +329,6 @@
     <proxy>https://goproxy.cn</proxy>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/everyday/isRectangleOverlap.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="28" column="1" lean-forward="true" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sortMethod/selectInsert.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="48">
@@ -818,20 +811,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/array/longestConsecutive.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="79">
+          <caret line="29" column="3" lean-forward="true" selection-start-line="29" selection-start-column="3" selection-end-line="29" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/main.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="192">
-          <caret line="8" column="60" lean-forward="true" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="60" />
+          <caret line="8" column="42" selection-start-line="8" selection-start-column="42" selection-end-line="8" selection-end-column="42" />
           <folding>
             <element signature="e#14#70#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/array/longestConsecutive.go">
+    <entry file="file://$PROJECT_DIR$/array/permute.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="463">
-          <caret line="46" column="18" lean-forward="true" selection-start-line="18" selection-start-column="2" selection-end-line="46" selection-end-column="18" />
+        <state relative-caret-position="385">
+          <caret line="31" column="26" selection-start-line="31" selection-start-column="26" selection-end-line="31" selection-end-column="26" />
         </state>
       </provider>
     </entry>

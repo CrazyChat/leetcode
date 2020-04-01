@@ -6,6 +6,5 @@ import (
 )
 
 func main() {
-	num := array.LongestConsecutive([]int{100, 4, 200, 1, 3, 2})
-	fmt.Println(num)
+	fmt.Println(array.Permute([]int{1,2}))
 }

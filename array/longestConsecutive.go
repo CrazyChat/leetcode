@@ -31,14 +31,13 @@ func LongestConsecutive(nums []int) int {
 	maxLength := 1
 	for val, _ := range numsMap {
 		// 只对 当前数字-1 不在哈希表里的数字作为连续序列的第一个数字去找对应的最长序列，这是因为其他数字一定已经出现在了某个序列里。
-		if _, ok := numsMap[val-1]; !ok {
+		if !numsMap[val-1] {
 			step := 1
 			curLength := 1
-			if _, hasNext := numsMap[val+1]; hasNext {
-				for hasNext {
+			if numsMap[val+1] {
+				for numsMap[val+step] {
 					curLength++
 					step++
-					_, hasNext = numsMap[val+step]
 				}
 			}
 			maxLength = max(maxLength, curLength)

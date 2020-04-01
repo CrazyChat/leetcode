@@ -6,7 +6,6 @@ import (
 )
 
 func main() {
-	arr := [][]int{{0,1}}
-	num := array.MaxAreaOfIsland(arr)
+	num := array.LongestConsecutive([]int{100, 4, 200, 1, 3, 2})
 	fmt.Println(num)
 }

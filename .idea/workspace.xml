@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3a9c6fb2-5cc7-4af8-83bb-71efdc0ca03d" name="默认更改列表" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/array/threeSum.go" beforeDir="false" afterPath="$PROJECT_DIR$/array/threeSum.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -15,10 +13,10 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/array/maxAreaOfIsland.go">
+        <entry file="file://$PROJECT_DIR$/array/longestConsecutive.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="49" column="27" selection-start-line="49" selection-start-column="27" selection-end-line="49" selection-end-column="27" />
+            <state relative-caret-position="463">
+              <caret line="46" column="18" lean-forward="true" selection-start-line="18" selection-start-column="2" selection-end-line="46" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -26,8 +24,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="10" column="18" lean-forward="true" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+            <state relative-caret-position="192">
+              <caret line="8" column="60" lean-forward="true" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="60" />
               <folding>
                 <element signature="e#14#70#0" expanded="true" />
               </folding>
@@ -67,10 +65,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/array/singleNumbers3.go" />
-        <option value="$PROJECT_DIR$/array/majorityElement.go" />
-        <option value="$PROJECT_DIR$/sort/Bubble.go" />
-        <option value="$PROJECT_DIR$/sort/select.go" />
         <option value="$PROJECT_DIR$/sort/selectInsert.go" />
         <option value="$PROJECT_DIR$/sort/bubble.go" />
         <option value="$PROJECT_DIR$/sort/insertSort.go" />
@@ -116,8 +110,12 @@
         <option value="$PROJECT_DIR$/structure/graph.go" />
         <option value="$PROJECT_DIR$/array/threeSum.go" />
         <option value="$PROJECT_DIR$/array/binarySeach.go" />
-        <option value="$PROJECT_DIR$/main.go" />
         <option value="$PROJECT_DIR$/array/maxAreaOfIsland.go" />
+        <option value="$PROJECT_DIR$/array/countDigitOne.go" />
+        <option value="$PROJECT_DIR$/array/search.go" />
+        <option value="$PROJECT_DIR$/array/findLengthOfLCIS.go" />
+        <option value="$PROJECT_DIR$/array/longestConsecutive.go" />
+        <option value="$PROJECT_DIR$/main.go" />
       </list>
     </option>
   </component>
@@ -284,7 +282,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32769832" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.33289987" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.22626787" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -306,7 +304,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32769832" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.24317296" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.33289987" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -331,22 +329,6 @@
     <proxy>https://goproxy.cn</proxy>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/sort/bubble.go" />
-    <entry file="file://$PROJECT_DIR$/sort/selectInsert.go" />
-    <entry file="file://$PROJECT_DIR$/sortMethod/bubble.go">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sortMethod/mergeSort.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
-          <folding>
-            <element signature="n#!!block;n#MergeSort#0" />
-            <element signature="n#!!block;n#merge#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/everyday/isRectangleOverlap.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -488,51 +470,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/structure/stack.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="40" selection-start-line="40" selection-end-line="40" />
-          <folding>
-            <element signature="n#!!block;n#CreateStack#0" />
-            <element signature="n#!!block;n#Len#0" />
-            <element signature="n#!!block;n#Cap#0" />
-            <element signature="n#!!block;n#Push#0" />
-            <element signature="n#!!block;n#Top#0" />
-            <element signature="n#!!block;n#Pop#0" />
-            <element signature="n#!!block;n#IsEmpty#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/structure/queue.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="792">
           <caret line="33" column="1" selection-start-line="33" selection-start-column="1" selection-end-line="33" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/structure/heap.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="35" column="31" selection-start-line="35" selection-start-column="20" selection-end-line="35" selection-end-column="31" />
-          <folding>
-            <element signature="e#46#135#0" />
-            <element signature="n#!!block;n#NewHeap#0" />
-            <element signature="e#195#240#0" />
-            <element signature="n#!!block;n#Insert#0" />
-            <element signature="e#321#334#0" />
-            <element signature="e#447#521#0" />
-            <element signature="e#599#631#0" />
-            <element signature="e#668#682#0" />
-            <element signature="n#!!block;n#GetArr#0" />
-            <element signature="n#!!block;n#heapify#0" />
-            <element signature="e#1017#1049#0" />
-            <element signature="e#1134#1170#0" />
-            <element signature="e#1223#1237#0" />
-            <element signature="n#!!block;n#Count#0" />
-            <element signature="n#!!block;n#Cap#0" />
-            <element signature="e#1473#1488#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -578,20 +519,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/leetcodestr/lengthOfLongestSubstring.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-47">
-          <caret line="14" column="7" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/leetcodestr/longestCommonPrefix.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="14" column="14" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/leetcodestr/checkInclusion.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2160">
@@ -620,13 +547,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-667">
           <caret line="19" column="11" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/go/src/builtin/builtin.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="70" column="18" selection-start-line="70" selection-start-column="12" selection-end-line="70" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -812,20 +732,106 @@
         </state>
       </provider>
     </entry>
+    <entry file="file:///usr/local/go/src/builtin/builtin.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="295">
+          <caret line="157" column="8" selection-start-line="157" selection-start-column="5" selection-end-line="157" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/array/countDigitOne.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="343">
+          <caret line="23" column="3" lean-forward="true" selection-start-line="23" selection-start-column="3" selection-end-line="23" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/array/search.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="676">
+          <caret line="40" column="11" selection-start-line="40" selection-start-column="11" selection-end-line="40" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leetcodestr/longestCommonPrefix.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-227">
+          <caret line="14" column="14" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leetcodestr/lengthOfLongestSubstring.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-9">
+          <caret line="28" column="7" lean-forward="true" selection-start-line="28" selection-start-column="7" selection-end-line="28" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/structure/stack.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="212">
+          <caret line="15" column="20" lean-forward="true" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
+          <folding>
+            <element signature="n#!!block;n#CreateStack#0" />
+            <element signature="n#!!block;n#Len#0" />
+            <element signature="n#!!block;n#Cap#0" />
+            <element signature="n#!!block;n#Push#0" />
+            <element signature="n#!!block;n#Top#0" />
+            <element signature="n#!!block;n#Pop#0" />
+            <element signature="n#!!block;n#IsEmpty#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/structure/heap.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="78">
+          <caret line="14" column="24" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="24" />
+          <folding>
+            <element signature="n#!!block;n#NewHeap#0" />
+            <element signature="n#!!block;n#Insert#0" />
+            <element signature="n#!!block;n#MoveTop#0" />
+            <element signature="e#599#631#0" />
+            <element signature="e#668#682#0" />
+            <element signature="n#!!block;n#GetArr#0" />
+            <element signature="e#1017#1049#0" />
+            <element signature="e#1134#1170#0" />
+            <element signature="e#1223#1237#0" />
+            <element signature="n#!!block;n#Count#0" />
+            <element signature="n#!!block;n#Cap#0" />
+            <element signature="e#1473#1488#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/array/findLengthOfLCIS.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="212">
+          <caret line="24" column="12" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/array/maxAreaOfIsland.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="79">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/main.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="10" column="18" lean-forward="true" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+        <state relative-caret-position="192">
+          <caret line="8" column="60" lean-forward="true" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="60" />
           <folding>
             <element signature="e#14#70#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/array/maxAreaOfIsland.go">
+    <entry file="file://$PROJECT_DIR$/array/longestConsecutive.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="49" column="27" selection-start-line="49" selection-start-column="27" selection-end-line="49" selection-end-column="27" />
+        <state relative-caret-position="463">
+          <caret line="46" column="18" lean-forward="true" selection-start-line="18" selection-start-column="2" selection-end-line="46" selection-end-column="18" />
         </state>
       </provider>
     </entry>

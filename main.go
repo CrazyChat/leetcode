@@ -6,5 +6,6 @@ import (
 )
 
 func main() {
-	fmt.Println(array.Permute([]int{1,2}))
+	arr := array.Trap([]int{0,1,0,2,1,0,1,3,2,1,2,1})
+	fmt.Println(arr)
 }

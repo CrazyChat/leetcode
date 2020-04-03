@@ -2,10 +2,17 @@ package main
 
 import (
 	"fmt"
-	"github.com/crazychat/leetcode/array"
+	"github.com/crazychat/leetcode/structure"
 )
 
 func main() {
-	arr := array.Trap([]int{0,1,0,2,1,0,1,3,2,1,2,1})
-	fmt.Println(arr)
+	tree := structure.NewTree()
+	arr := []int{6, 3, 8, 2, 5, 1, 7}
+	for _, v := range arr {
+		tree.Insert(v)
+	}
+	tree.InOrder()
+	fmt.Println(tree.Delete(6))
+	tree.InOrder()
+	tree.PreOrder()
 }

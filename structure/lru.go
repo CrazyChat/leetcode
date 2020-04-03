@@ -20,9 +20,7 @@ type LruCache struct {
 }
 
 func CreateLruCache(cap int) LruCache {
-	lru := LruCache{limit: cap}
-	lru.HashMap = make(map[KeyType]*LruNode, cap)
-	return lru
+	return LruCache{limit: cap, HashMap:make(map[KeyType]*LruNode, cap)}
 }
 
 func (l *LruCache) Get(key KeyType) (ValType, error) {
@@ -65,8 +63,10 @@ func (l *LruCache) refreshNode(node *LruNode) {
 func (l *LruCache) removeNode(node *LruNode) ValType {
 	if node == l.end {
 		l.end = l.end.Pre
+		l.end.Next = nil
 	} else if node == l.head {
 		l.head = l.head.Next
+		l.head.Pre = nil
 	} else {
 		node.Pre.Next = node.Next
 		node.Next.Pre = node.Pre

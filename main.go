@@ -6,9 +6,9 @@ import (
 )
 
 func main() {
-	text2 := "hofubmnylkra"
-	text1 := "pqhgxgdofcvmr"
-	fmt.Println(dynamic.LongestCommonSubsequence(text1, text2))
+	arr := []int{1,2,3,4}
+	result := dynamic.MaxProfit(arr)
+	fmt.Println(result)
 }
 
 func Bag(weight []int, value []int,  n, cap int) int {

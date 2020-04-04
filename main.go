@@ -5,25 +5,49 @@ import (
 	"github.com/crazychat/leetcode/dynamic"
 )
 
-/*
-[1,1,-6,1,-2,-4,4,-2,6,-6,0,6],[-3,-3,-6,-2,-6,-2,7,-9,-5,-7,-5,5,1]]
- */
-
 func main() {
-	triangle := [][]int{}
-	triangle = append(triangle, []int{-7})
-	triangle = append(triangle, []int{-2,1})
-	triangle = append(triangle, []int{-5,-5,9})
-	triangle = append(triangle, []int{-4,-5,4,4})
-	triangle = append(triangle, []int{-6,-6,2,-1,-5})
-	triangle = append(triangle, []int{3,7,8,-3,7,-9})
-	triangle = append(triangle, []int{-9,-1,-9,6,9,0,7})
-	triangle = append(triangle, []int{-7,0,-6,-8,7,1,-4,9})
-	triangle = append(triangle, []int{-3,2,-6,-9,-7,-6,-9,4,0})
-	triangle = append(triangle, []int{-8,-6,-3,-9,-2,-6,7,-5,0,7})
-	triangle = append(triangle, []int{-9,-1,-2,4,-2,4,4,-1,2,-5,5})
-	triangle = append(triangle, []int{1,1,-6,1,-2,-4,4,-2,6,-6,0,6})
-	triangle = append(triangle, []int{-3,-3,-6,-2,-6,-2,7,-9,-5,-7,-5,5,1})
-	x := dynamic.MinimumTotal(triangle)
-	fmt.Println(x)
+	text2 := "hofubmnylkra"
+	text1 := "pqhgxgdofcvmr"
+	fmt.Println(dynamic.LongestCommonSubsequence(text1, text2))
+}
+
+func Bag(weight []int, value []int,  n, cap int) int {
+	// 建立动态表格, // 初始化 -1
+	state := make([][]int, n)
+	for i := range state {
+		state[i] = make([]int, cap+1)
+	}
+	for i := range state {
+		for j := range state[i] {
+			state[i][j] = -1
+		}
+	}
+	fmt.Println(state)
+	// 首行初始化
+	state[0][0] = 0
+	if weight[0] <= cap {
+		state[0][weight[0]] = value[0]
+	}
+	// 遍历动态更改状态
+	for i := 1; i < n; i++ {
+		for j := 0; j <= cap; j++ {
+			// 在上一层为true的基础上进行分支
+			if state[i-1][j] != -1 {
+				// 不放
+				state[i][j] = state[i-1][j]
+				// 放
+				if j + weight[i] <= cap {
+					state[i][j+weight[i]] = state[i-1][j] + value[i]
+				}
+			}
+		}
+	}
+	// 输出最大值
+	maxValue := -1
+	for i := 0; i <= cap; i++ {
+		if state[n-1][i] > maxValue {
+			maxValue = state[n-1][i]
+		}
+	}
+	return maxValue
 }

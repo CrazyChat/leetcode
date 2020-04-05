@@ -29,6 +29,7 @@ func LongestCommonSubsequence(text1 string, text2 string) int {
 	if text1[0] == text2[0] {
 		rect[0][0] = 1
 	}
+	// 初始化第一行
 	for i := 1; i < text2Len; i++ {
 		if text1[0] == text2[i] {
 			rect[0][i] = 1
@@ -36,6 +37,7 @@ func LongestCommonSubsequence(text1 string, text2 string) int {
 			rect[0][i]  = rect[0][i-1]
 		}
 	}
+	// 初始化第一列
 	for i := 1; i < text1Len; i++ {
 		if text2[0] == text1[i] {
 			rect[i][0] = 1
@@ -43,6 +45,7 @@ func LongestCommonSubsequence(text1 string, text2 string) int {
 			rect[i][0] = rect[i-1][0]
 		}
 	}
+	fmt.Println("初始化后rect：")
 	for i := range rect {
 		fmt.Println(rect[i])
 	}
@@ -56,6 +59,7 @@ func LongestCommonSubsequence(text1 string, text2 string) int {
 			}
 		}
 	}
+	fmt.Println("填充后rect：")
 	for i := range rect {
 		fmt.Println(rect[i])
 	}

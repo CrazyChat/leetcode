@@ -1,87 +1,69 @@
 package structure
 
-import "errors"
-
-type KeyType = int
-type ValType = int
-
-type LruNode struct {
-	Key KeyType
-	Val ValType
-	Pre *LruNode
-	Next *LruNode
-}
-
-type LruCache struct {
-	limit int
-	HashMap map[KeyType]*LruNode
+type LRUCache struct {
+	cap int
 	head *LruNode
 	end *LruNode
+	dataMap map[int]*LruNode
 }
 
-func CreateLruCache(cap int) LruCache {
-	return LruCache{limit: cap, HashMap:make(map[KeyType]*LruNode, cap)}
+type LruNode struct {
+	key int
+	val int
+	pre *LruNode
+	next *LruNode
 }
 
-func (l *LruCache) Get(key KeyType) (ValType, error) {
-	if node, exist := l.HashMap[key]; exist {
-		l.refreshNode(node)
-		return node.Val, nil
+func Constructor(capacity int) LRUCache {
+	cache := LRUCache{capacity, &LruNode{}, &LruNode{}, make(map[int]*LruNode, capacity)}
+	cache.head.next = cache.end
+	cache.end.pre = cache.head
+	return cache
+}
+
+func (this *LRUCache) Get(key int) int {
+	if node, exists := this.dataMap[key]; exists {
+		this.remove(node)
+		this.putHead(node)
+		return node.val
 	}
-	var i ValType
-	return i, errors.New("No exist")
+	return -1
 }
 
-// Put 存在时修改，不存在时新增
-func (l *LruCache) Put(key KeyType, val ValType) {
-	node, exists := l.HashMap[key]
-	if exists {
-		node.Val = val
-		l.refreshNode(node)
+func (this *LRUCache) Put(key int, value int)  {
+	/* 存在
+	1. 更新
+	2. 移动到头部
+	*/
+	if node, exists := this.dataMap[key]; exists {
+		node.val = value
+		this.remove(node)
+		this.putHead(node)
 		return
 	}
-	// 不存在，插入
-	if len(l.HashMap) >= l.limit {
-		// todo 删除链尾
-		oldKey := l.removeNode(l.end)
-		delete(l.HashMap, oldKey)
+	/* 不存在
+	1. 如果满了，先删除end
+	2. 插入到头部和dataMap
+	*/
+	newNode := LruNode{key: key, val: value}
+	if len(this.dataMap) >= this.cap {
+		delete(this.dataMap, this.end.pre.key)
+		this.remove(this.end.pre)
 	}
-	new_node := LruNode{Key: key, Val: val}
-	l.addNode(&new_node)
-	l.HashMap[key] = &new_node
-	return
+	this.putHead(&newNode)
+	this.dataMap[key] = &newNode
 }
 
-func (l *LruCache) refreshNode(node *LruNode) {
-	if node == l.head {
-		return
-	}
-	l.removeNode(node)
-	l.addNode(node)
+func (this *LRUCache) putHead(node *LruNode) {
+	// 新增节点和head.next关联起来
+	this.head.next.pre = node
+	node.next = this.head.next
+	// head和新增加点关联起来
+	this.head.next = node
+	node.pre = this.head
 }
 
-func (l *LruCache) removeNode(node *LruNode) ValType {
-	if node == l.end {
-		l.end = l.end.Pre
-		l.end.Next = nil
-	} else if node == l.head {
-		l.head = l.head.Next
-		l.head.Pre = nil
-	} else {
-		node.Pre.Next = node.Next
-		node.Next.Pre = node.Pre
-	}
-	return node.Val
-}
-
-func (l *LruCache) addNode(node *LruNode) {
-	if l.head == nil {
-		l.head = node
-		l.end = node
-		return
-	}
-	node.Next = l.head
-	l.head.Pre = node
-	l.head = node
-	return
+func (this *LRUCache) remove(node *LruNode) {
+	node.pre.next = node.next
+	node.next.pre = node.pre
 }

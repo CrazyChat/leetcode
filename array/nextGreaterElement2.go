@@ -1,6 +1,8 @@
 package array
 
-import "math"
+import (
+	"math"
+)
 
 /*
 503. 下一个更大元素 II
@@ -20,7 +22,7 @@ func NextGreaterElements(nums []int) []int {
 	if len(nums) == 0 {
 		return []int{}
 	}
-	if len(nums) == 1 {
+	if len(nums) <= 1 {
 		nums[0] = -1
 		return nums
 	}

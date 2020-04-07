@@ -6,7 +6,6 @@ import (
 )
 
 func main() {
-	nums1 := []int{4,1,2}
-	nums2 := []int{2}
-	fmt.Println(array.NextGreaterElement(nums1, nums2))
+	nums := []int{1,3,5,4,2}
+	fmt.Println(array.NextGreaterElements(nums))
 }

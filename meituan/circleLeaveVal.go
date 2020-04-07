@@ -1,7 +1,5 @@
 package meituan
 
-import "fmt"
-
 /*
 空间回廊
 时间限制：C/C++语言 1000MS；其他语言 3000MS
@@ -36,89 +34,45 @@ import "fmt"
  */
 
 /*
-sum  初始法力值
+energy  初始法力值
 roomsCount 房间数
 arr 每个房间需要的法力值
  */
-func CircleLeaveVal(roomsCount, sum int, arr []int) int {
-		// 特例判断
-		if roomsCount < 1 {
-			return 0
-		}
-		if roomsCount == 1 {
-			return sum/arr[0]
-		}
-		var leaveRoomsCount int	// 在多少个房间留下了法力值
-		var circleSum int	//  走一圈在每个房间留下了法力值需要多少
-		for i := range arr {
-			circleSum += arr[i]
-		}
-		/*
-			1. 全部留下法力可以多少圈，更新leaveRoomsCount
-			2. 取模，检查sum: if sum == 0 结束
-			3. 走一圈标记没法留下法力值的房间, 同时更新circleSum
-			4. 删除没有留下法力值的房间
-			5. 重新循环
-		 */
-		for len(arr) >= 1 {
-			roomsCount = len(arr)
-			// 1. 每个房间都留下法力可以多少圈，更新leaveRoomsCount
-			circleCount := sum/circleSum
-			leaveRoomsCount += circleCount * roomsCount
-			// 2. 取模，检查sum: if sum == 0 结束
-			sum = sum % circleSum
-			if sum == 0 {
-				return leaveRoomsCount
-			}
-			// 3. 走一圈标记没法留下法力值的房间
-			isLeaveSum := make([]bool, roomsCount)
-			circleSum = 0
-			for i := 0; i < roomsCount; i++ {
-				// 留下法力值
-				if sum >= arr[i] {
-					sum -= arr[i]
-					leaveRoomsCount++
-					isLeaveSum[i] = true
-					circleSum+= arr[i]
-				}
-			}
-			// 3. 删除没有留下法力值的房间
-			arr = removeFalse(arr, isLeaveSum)
-			fmt.Println(arr, circleSum)
-		}
-		return leaveRoomsCount
-}
-
-/*
-删除 arr 对应 isLeaveSum 中值为 false 的位置
-输入:
-arr: [1,2,3,4,5,6]
-isLeaveSum: [false, false, true, false, true, false]
-输出:
-arr: [3, 5]
- */
-func removeFalse(arr []int, isLeaveSum []bool) []int {
-	i := 0
-	j := 0
-	for i < len(arr) && j < len(arr) {
-		// 找 false
-		for i < len(arr) && isLeaveSum[i] == true {
-			i++
-		}
-		if i >= len(arr) {
-			break
-		}
-		// 从 false 后面找 true
-		j = i+1
-		for j < len(arr) && isLeaveSum[j] == false {
-			j++
-		}
-		if j >= len(arr) {
-			break
-		}
-		arr[i], arr[j] = arr[j], arr[i]
-		isLeaveSum[i], isLeaveSum[j] = isLeaveSum[j], isLeaveSum[i]
-		i++
+func CircleLeaveVal(roomsCount, energy int, arr []int) int {
+	// 特例判断
+	if roomsCount < 1 {
+		return 0
 	}
-	return arr[:i]
+	if roomsCount == 1 {
+		return energy/arr[0]
+	}
+	var (
+		leaveRoomsCount int	// 在多少个房间留下了法力值
+		circleEnergy int	// 走一圈在每个房间都留下法力值需要多少
+	)
+	for roomsCount > 0 {
+		leaveRoom := 0	// 记录可以留下法力值房间的个数
+		// 走一圈，更新 circleSum & leaveRoomsCount & arr(将可以留下法力值的前移)
+		for i, val := range arr {
+			if energy >= val {
+				energy -= val
+				circleEnergy += arr[i]
+				leaveRoomsCount++
+				// 将可以留下法力值的房间前移
+				arr[leaveRoom] = val
+				leaveRoom++
+			}
+		}
+		/* 每一圈后
+		1. 根据 circleEnergy，剩余法力值对circleEnergy取模并更新energy & leaveRoomsCount
+		2. 更新房间长度
+		 */
+		if energy == 0 || circleEnergy == 0 {
+			return leaveRoomsCount
+		}
+		leaveRoomsCount = leaveRoomsCount + energy / circleEnergy * leaveRoomsCount
+		energy = energy % circleEnergy
+		roomsCount = leaveRoom
+	}
+	return leaveRoomsCount
 }

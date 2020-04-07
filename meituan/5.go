@@ -1,5 +1,10 @@
 package meituan
 
+import (
+	"fmt"
+	"sort"
+)
+
 /*
 max xor min
 时间限制：C/C++语言 1000MS；其他语言 3000MS
@@ -29,19 +34,21 @@ max xor min
 点击“调试”亦可保存代码
 编程题可以使用本地编译器，此页面不记录跳出次数
 */
-//func main() {
-//	length := 0
-//	fmt.Scanf("%d", &length)
-//	// 偶数为所有数字的异或和
-//	count := 0
-//	for i := 0; i < length; i++ {
-//		temp := 0
-//		fmt.Scanf("%d", &temp)
-//		count = count ^ temp
-//	}
-//	// 奇数结果为0
-//	if length%2 != 0 {
-//		fmt.Println(0)
-//	}
-//	fmt.Println(count)
-//}
+func MaxxOrMin(arr []int) int {
+	if len(arr) == 0 {
+		return 0
+	}
+	sort.Ints(arr)
+	// 奇数结果为0
+	if len(arr) % 2 != 0 {
+		return 0
+	}
+	// 偶数为所有数字的异或和
+	result := arr[0]
+	for i := 1; i < len(arr); i++ {
+		fmt.Printf("%d ^ %d = ", result, arr[i])
+		result = result ^ arr[i]
+		fmt.Printf("%d\n", result)
+	}
+	return result
+}

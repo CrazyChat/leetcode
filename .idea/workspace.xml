@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3a9c6fb2-5cc7-4af8-83bb-71efdc0ca03d" name="默认更改列表" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/meituan/5.go" beforeDir="false" afterPath="$PROJECT_DIR$/meituan/5.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/meituan/circleLeaveVal.go" beforeDir="false" afterPath="$PROJECT_DIR$/meituan/circleLeaveVal.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/meituan/minDifference.go" beforeDir="false" afterPath="$PROJECT_DIR$/meituan/minDifference.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,22 +19,39 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="14">
-              <caret line="12" column="23" lean-forward="true" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
+            <state relative-caret-position="216">
+              <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
               <folding>
-                <element signature="e#14#72#0" expanded="true" />
+                <element signature="e#14#70#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/structure/stack.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="408">
+              <caret line="23" column="46" selection-start-line="23" selection-start-column="46" selection-end-line="23" selection-end-column="46" />
+              <folding>
+                <element signature="n#!!block;n#Len#0" />
+                <element signature="n#!!block;n#Cap#0" />
+                <element signature="n#!!block;n#Push#0" />
+                <element signature="n#!!block;n#Top#0" />
+                <element signature="n#!!block;n#Pop#0" />
+                <element signature="n#!!block;n#IsEmpty#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/dynamic/minimumTotal.go">
+        <entry file="file://$PROJECT_DIR$/array/nextGreaterElement.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="7">
-              <caret line="57" selection-start-line="57" selection-end-line="76" selection-end-column="1" />
+            <state relative-caret-position="152">
+              <caret line="61" column="1" selection-start-line="61" selection-start-column="1" selection-end-line="61" selection-end-column="1" />
               <folding>
-                <element signature="e#31#252#0" />
+                <element signature="e#15#43#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -56,7 +77,6 @@
       <find>ListNode</find>
       <find>Val</find>
       <find>Print</find>
-      <find>fmt</find>
       <find>int</find>
       <find>buffer</find>
       <find>removeNode</find>
@@ -64,6 +84,7 @@
       <find>Get</find>
       <find>value</find>
       <find>the node no exists</find>
+      <find>fmt</find>
     </findStrings>
   </component>
   <component name="GOROOT" path="/usr/local/go" />
@@ -73,20 +94,11 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/array/longestPalindrome.go" />
-        <option value="$PROJECT_DIR$/everyday/longestPalindrome.go" />
-        <option value="$PROJECT_DIR$/array/isPalindrome.go" />
-        <option value="$PROJECT_DIR$/array/findKthLargestByHeap.go" />
-        <option value="$PROJECT_DIR$/array/findKthLargest.go" />
-        <option value="$PROJECT_DIR$/sortMethod/quickSort.go" />
-        <option value="$PROJECT_DIR$/array/getLeastNumbers.go" />
-        <option value="$PROJECT_DIR$/structure/cacheLRU.go" />
         <option value="$PROJECT_DIR$/else/queen.go" />
         <option value="$PROJECT_DIR$/other/queen.go" />
         <option value="$PROJECT_DIR$/mix/queen.go" />
         <option value="$PROJECT_DIR$/structure/testStack.go" />
         <option value="$PROJECT_DIR$/structure/stack_test.go" />
-        <option value="$PROJECT_DIR$/structure/stack.go" />
         <option value="$PROJECT_DIR$/structure/linkedList.go" />
         <option value="$PROJECT_DIR$/structure/queue.go" />
         <option value="$PROJECT_DIR$/structure/heap.go" />
@@ -114,20 +126,29 @@
         <option value="$PROJECT_DIR$/array/findCircleNum.go" />
         <option value="$PROJECT_DIR$/array/megerSection.go" />
         <option value="$PROJECT_DIR$/array/trap.go" />
-        <option value="$PROJECT_DIR$/structure/lru.go" />
         <option value="$PROJECT_DIR$/meituan/4.go" />
         <option value="$PROJECT_DIR$/meituan/1.go" />
-        <option value="$PROJECT_DIR$/meituan/5.go" />
         <option value="$PROJECT_DIR$/meituan/3.go" />
+        <option value="$PROJECT_DIR$/structure/binarytree.go" />
+        <option value="$PROJECT_DIR$/dynamic/minimumTotal.go" />
+        <option value="$PROJECT_DIR$/leetcodestr/longestCommonSubsequence.go" />
+        <option value="$PROJECT_DIR$/dynamic/longestCommonSubsequence.go" />
+        <option value="$PROJECT_DIR$/dynamic/maxProfit.go" />
+        <option value="$PROJECT_DIR$/dynamic/maxProfit2.go" />
+        <option value="$PROJECT_DIR$/structure/lru.go" />
+        <option value="$PROJECT_DIR$/structure/minStack.go" />
         <option value="$PROJECT_DIR$/meituan/2.go" />
         <option value="$PROJECT_DIR$/meituan/minDifference.go" />
-        <option value="$PROJECT_DIR$/structure/binarytree.go" />
+        <option value="$PROJECT_DIR$/dynamic/maximalSquare.go" />
+        <option value="$PROJECT_DIR$/meituan/circleLeaveVal.go" />
+        <option value="$PROJECT_DIR$/meituan/5.go" />
+        <option value="$PROJECT_DIR$/structure/stack.go" />
         <option value="$PROJECT_DIR$/main.go" />
-        <option value="$PROJECT_DIR$/dynamic/minimumTotal.go" />
+        <option value="$PROJECT_DIR$/array/nextGreaterElement.go" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="23" />
     <option name="width" value="1440" />
     <option name="height" value="877" />
@@ -150,7 +171,7 @@
             <path>
               <item name="leetcode" type="b2602c69:ProjectViewProjectNode" />
               <item name="leetcode" type="462c0819:PsiDirectoryNode" />
-              <item name="dynamic" type="462c0819:PsiDirectoryNode" />
+              <item name="array" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -173,6 +194,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/dynamic" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/everyday" />
     </key>
@@ -190,7 +212,7 @@
     </option>
   </component>
   <component name="RunManager" selected="Go Build.go build main.go">
-    <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" nameIsGenerated="true">
       <module name="leetcode" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="FILE" />
@@ -245,7 +267,6 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Go Build.go build main.go" />
         <item itemvalue="Go Test.TestStack_int in github.com/crazychat/leetcode/structure" />
         <item itemvalue="Go Test.TestStack_Pop in github.com/crazychat/leetcode/structure" />
         <item itemvalue="Go Test.TestStack_Top in github.com/crazychat/leetcode/structure" />
@@ -283,15 +304,15 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="877" extended-state="0" />
+    <frame x="0" y="23" width="1440" height="877" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16237482" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21030043" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32769832" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.25877762" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.19505852" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -307,28 +328,6 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Database" order="3" />
     </layout>
-    <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3125894" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32769832" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.33289987" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32899868" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="bottom" id="调试" order="12" weight="0.32899868" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Database" order="3" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -338,69 +337,6 @@
     <proxy>https://goproxy.cn</proxy>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/structure/cacheLRU.go" />
-    <entry file="file://$PROJECT_DIR$/mix/queen.go" />
-    <entry file="file://$PROJECT_DIR$/structure/arrayStack.go" />
-    <entry file="file://$PROJECT_DIR$/structure/stack_test.go" />
-    <entry file="file://$PROJECT_DIR$/structure/linkedList.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="69" column="10" selection-start-line="69" selection-start-column="10" selection-end-line="69" selection-end-column="10" />
-          <folding>
-            <element signature="e#71#116#0" />
-            <element signature="n#!!block;n#CreateLinkedList#0" />
-            <element signature="e#199#207#0" />
-            <element signature="n#!!block;n#Len#0" />
-            <element signature="e#445#473#0" />
-            <element signature="n#!!block;n#PushNode#0" />
-            <element signature="e#479#496#0" />
-            <element signature="e#520#550#0" />
-            <element signature="n#!!block;n#PushVal#0" />
-            <element signature="e#870#887#0" />
-            <element signature="e#911#959#0" />
-            <element signature="e#935#943#0" />
-            <element signature="n#!!block;n#Delete#0" />
-            <element signature="e#832#839#0" />
-            <element signature="e#841#848#0" />
-            <element signature="e#861#870#0" />
-            <element signature="n#!!block;n#Put#0" />
-            <element signature="e#1313#1320#0" />
-            <element signature="e#1333#1335#0" />
-            <element signature="n#!!block;n#PrintList#0" />
-            <element signature="e#1372#1416#0" />
-            <element signature="e#1386#1400#0" />
-            <element signature="n#!!block;n#HasCycle#0" />
-            <element signature="e#1033#1053#0" />
-            <element signature="n#!!block;n#MiddleNode#0" />
-            <element signature="e#1269#1316#0" />
-            <element signature="n#!!block;n#MergeTwoLists#0" />
-            <element signature="e#1437#1453#0" />
-            <element signature="e#1467#1483#0" />
-            <element signature="e#1525#1579#0" />
-            <element signature="e#1583#1637#0" />
-            <element signature="n#!!block;n#RemoveNthFromEnd#0" />
-            <element signature="e#1825#1856#0" />
-            <element signature="e#1875#1923#0" />
-            <element signature="n#!!block;n#ReverseList#0" />
-            <element signature="e#2098#2167#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/structure/queue.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="792">
-          <caret line="33" column="1" selection-start-line="33" selection-start-column="1" selection-end-line="33" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/string/longestCommonPrefix.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="19" selection-start-column="19" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/string/lengthOfLongestSubstring.go">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -467,13 +403,6 @@
           <folding>
             <element signature="e#21#49#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/array/twoSum.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4">
-          <caret line="20" column="6" lean-forward="true" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
         </state>
       </provider>
     </entry>
@@ -563,27 +492,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/array/threeSum.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1320">
-          <caret line="55" column="24" selection-start-line="55" selection-start-column="24" selection-end-line="55" selection-end-column="24" />
-          <folding>
-            <element signature="e#15#76#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/array/binarySeach.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="456">
           <caret line="19" column="3" selection-start-line="19" selection-start-column="3" selection-end-line="19" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/go/src/builtin/builtin.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
-          <caret line="157" column="8" selection-start-line="157" selection-start-column="5" selection-end-line="157" selection-end-column="8" />
         </state>
       </provider>
     </entry>
@@ -605,29 +517,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-227">
           <caret line="14" column="14" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/leetcodestr/lengthOfLongestSubstring.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-9">
-          <caret line="28" column="7" lean-forward="true" selection-start-line="28" selection-start-column="7" selection-end-line="28" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/structure/stack.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="15" column="20" lean-forward="true" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
-          <folding>
-            <element signature="n#!!block;n#CreateStack#0" />
-            <element signature="n#!!block;n#Len#0" />
-            <element signature="n#!!block;n#Cap#0" />
-            <element signature="n#!!block;n#Push#0" />
-            <element signature="n#!!block;n#Top#0" />
-            <element signature="n#!!block;n#Pop#0" />
-            <element signature="n#!!block;n#IsEmpty#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -749,33 +638,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/structure/lru.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="35" column="49" selection-start-line="35" selection-start-column="49" selection-end-line="35" selection-end-column="49" />
-          <folding>
-            <element signature="e#88#153#0" />
-            <element signature="e#169#249#0" />
-            <element signature="n#!!block;n#CreateLruCache#0" />
-            <element signature="e#307#335#0" />
-            <element signature="n#!!block;n#Get#0" />
-            <element signature="e#478#527#0" />
-            <element signature="n#!!block;n#Put#0" />
-            <element signature="e#694#746#0" />
-            <element signature="e#788#867#0" />
-            <element signature="e#888#908#0" />
-            <element signature="n#!!block;n#refreshNode#0" />
-            <element signature="e#1037#1050#0" />
-            <element signature="n#!!block;n#removeNode#0" />
-            <element signature="e#1164#1188#0" />
-            <element signature="e#1212#1239#0" />
-            <element signature="e#1245#1304#0" />
-            <element signature="n#!!block;n#addNode#0" />
-            <element signature="e#1387#1431#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sortMethod/mergeSort.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="304">
@@ -790,31 +652,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/meituan/5.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-323">
-          <caret line="9" column="15" lean-forward="true" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/meituan/3.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="183">
           <caret line="40" selection-start-line="40" selection-start-column="2" selection-end-line="48" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/meituan/2.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="37" column="9" selection-start-line="37" selection-start-column="9" selection-end-line="37" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/meituan/minDifference.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1008">
-          <caret line="45" column="15" lean-forward="true" selection-start-line="45" selection-start-column="15" selection-end-line="45" selection-end-column="15" />
         </state>
       </provider>
     </entry>
@@ -881,22 +722,150 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.go">
+    <entry file="file://$PROJECT_DIR$/array/SingleNumber1.go">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/array/twoSum.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="14">
-          <caret line="12" column="23" lean-forward="true" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
+        <state relative-caret-position="-20">
+          <caret line="20" column="6" lean-forward="true" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/array/threeSum.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1272">
+          <caret line="55" column="24" selection-start-line="55" selection-start-column="24" selection-end-line="55" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/go/src/builtin/builtin.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="188" column="5" selection-start-line="188" selection-start-column="5" selection-end-line="188" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leetcodestr/lengthOfLongestSubstring.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="672">
+          <caret line="28" column="7" lean-forward="true" selection-start-line="28" selection-start-column="7" selection-end-line="28" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dynamic/maxProfit.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="36" column="13" selection-start-line="36" selection-start-column="4" selection-end-line="36" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dynamic/maxProfit2.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="426">
+          <caret line="93" column="24" lean-forward="true" selection-start-line="63" selection-start-column="2" selection-end-line="93" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dynamic/longestCommonSubsequence.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="61" column="22" selection-start-line="61" selection-start-column="22" selection-end-line="61" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/structure/lru.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="64" lean-forward="true" selection-start-line="64" selection-end-line="64" />
           <folding>
-            <element signature="e#14#72#0" expanded="true" />
+            <element signature="e#50#124#0" />
+            <element signature="e#139#196#0" />
+            <element signature="n#!!block;n#Constructor#0" />
+            <element signature="n#!!block;n#Get#0" />
+            <element signature="n#!!block;n#Put#0" />
+            <element signature="n#!!block;n#putHead#0" />
+            <element signature="n#!!block;n#remove#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/structure/minStack.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="66" column="3" lean-forward="true" selection-start-line="66" selection-start-column="3" selection-end-line="66" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/meituan/minDifference.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="905">
+          <caret line="42" column="19" lean-forward="true" selection-start-line="42" selection-start-column="19" selection-end-line="42" selection-end-column="19" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dynamic/minimumTotal.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7">
-          <caret line="57" selection-start-line="57" selection-end-line="76" selection-end-column="1" />
+        <state relative-caret-position="1536">
+          <caret line="64" column="81" selection-start-line="64" selection-start-column="80" selection-end-line="64" selection-end-column="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dynamic/maximalSquare.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="71" column="9" lean-forward="true" selection-start-line="71" selection-start-column="9" selection-end-line="71" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/meituan/circleLeaveVal.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="469">
+          <caret line="73" column="22" selection-start-line="73" selection-start-column="22" selection-end-line="73" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/meituan/5.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="960">
+          <caret line="40" column="16" lean-forward="true" selection-start-line="40" selection-start-column="16" selection-end-line="40" selection-end-column="16" />
           <folding>
-            <element signature="e#31#252#0" />
+            <element signature="e#17#42#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/structure/stack.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="23" column="46" selection-start-line="23" selection-start-column="46" selection-end-line="23" selection-end-column="46" />
+          <folding>
+            <element signature="n#!!block;n#Len#0" />
+            <element signature="n#!!block;n#Cap#0" />
+            <element signature="n#!!block;n#Push#0" />
+            <element signature="n#!!block;n#Top#0" />
+            <element signature="n#!!block;n#Pop#0" />
+            <element signature="n#!!block;n#IsEmpty#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
+          <folding>
+            <element signature="e#14#70#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/array/nextGreaterElement.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="61" column="1" selection-start-line="61" selection-start-column="1" selection-end-line="61" selection-end-column="1" />
+          <folding>
+            <element signature="e#15#43#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -36,19 +36,24 @@ func MinDifference(nums []int, dif int) int {
 		fmt.Println(0)
 		return 0
 	}
-	// 排序
+	// 先排序
 	sort.Ints(nums)
-	// 比较最大值和最小值的差值
-	max := length - 1
+	// 最小值在最左边，最大值在最右边
 	min := 0
+	max := length - 1
 	delCount := 0
+	/*
+	持续循环直到nums[max] - nums[min] <= dif
+	如果nums[max] - nums[min] > dif，则需要删除最左边或最右边其中一个
+	比如：[1, 100, 101, 102, 103]，则比较nums[1]-nums[0]=99 > nums[4]-nums[3]=1, 所以删除左边，否则删除右边
+	 */
 	for min <= max && nums[max] - nums[min] > dif {
 		if nums[min+1]  - nums[min] >  nums[max] - nums[max-1] {
-			// 删除left
+			// 删除最左边
 			min++
 		} else {
-				// 删除右边
-				max--
+			// 删除最右边
+			max--
 		}
 		delCount++
 	}

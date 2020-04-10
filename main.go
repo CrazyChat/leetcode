@@ -1,105 +1,104 @@
 package main
 
-import (
-	"fmt"
-	"math"
-	"time"
-)
-
+import "fmt"
 
 func main() {
-	a := "mitcmusufhgr"
-	b := "mtacnusguhgr"
-	now := time.Now()
-	LwstBT(a, b)
-	fmt.Printf("%d, ", minDist)
-	fmt.Println("耗时: ", time.Since(now))
-	now = time.Now()
-	fmt.Printf("%d, ", LwstBTDB(a, b))
-	fmt.Println("耗时: ", time.Since(now))
-}
+	T := 0	// T 组测试数据
+	// 每次更新
+	n, m, c := 0, 0, 0	// n*m 方格大小，c种颜色
+	// 赋值
+	_, _ = fmt.Scanf("%d", &T)
+	for {
+		n, _ = fmt.Scanf("%d %d %d", &n, &m, &c)
+		if n == 0 {
+			break
+		}
+		num := make([]int, c)	// 染料的数量
+		// 矩阵
+		trc := make([][]int, n)
+		for i := range trc {
+			trc[i] = make([]int, m)
+		}
+		// 填充
+		for i := 0; i < len(trc); i++ {
+			for j := 0; j < len(trc); j++ {
+				// 有染料
 
-func LwstBTDB(a, b string) int {
-	// 创建动态矩阵
-	minDist := make([][]int, len(a))
-	for i := range a {
-		minDist[i] = make([]int, len(b))
-	}
-	// 初始化第一行第一列
-	for j := 0; j < len(minDist[0]); j++ {
-		// 第一行
-		if a[0] == b[j] {
-			minDist[0][j] = j
-		} else if j != 0 {
-			minDist[0][j] = minDist[0][j-1]+1
-		} else {
-			minDist[0][j] = 1
-		}
-	}
-	// 第一列
-	for i := 0; i < len(minDist); i++ {
-		// 第一列
-		if b[0] == a[i] {
-			minDist[i][0] = i
-		} else if i != 0 {
-			minDist[i][0] = minDist[i-1][0] + 1
-		} else {
-			minDist[i][0] = 1
-		}
-	}
-	// 从第一行开始到结束填表
-	for i := 1; i < len(minDist); i++ {
-		for j := 1; j < len(minDist[0]); j++ {
-			if a[i] == b[j] {
-				minDist[i][j] = min(minDist[i][j-1]+1, minDist[i-1][j]+1, minDist[i-1][j-1])
-			} else {
-				minDist[i][j] = min(minDist[i][j-1]+1, minDist[i-1][j]+1, minDist[i-1][j-1]+1)
+				// 无染料，退出
+
+				fmt.Println("NO")
+				return
 			}
 		}
 	}
-	return minDist[len(minDist)-1][len(minDist[0])-1]
+
 }
 
-func min(x, y, z int) int {
-	if x > y {
-		x = y
-	}
-	if x > z {
-		return z
-	}
-	return x
-}
 
-var minDist =  math.MaxInt64 // 存储结果
 
-func LwstBT(a, b string) {
-	minDist = math.MaxInt64
-	f(a, b, 0, 0, 0)
-}
 
-func f(a, b string, i, j int, edit int) {
-	// 判断是否结束
-	if i == len(a) || j == len(b) {
-		// 删除i剩下的字符
-		if i < len(a) {
-			edit += len(a)-i
+//func main() {
+//	n := 0
+//	// 赋值
+//	_, _ = fmt.Scanf("%d", &n)
+//	house := []int{}
+//	housey := 0
+//	for i := 0; i < n; i++ {
+//		_, _ = fmt.Scanf("%d %d", &house[i], housey)
+//	}
+//	// 动态规划表, arr[0][j] = house[j], arr[i][j] = house[j]
+//	arr := make([][]int, n)
+//	// 初始化第一行和第一列
+//	arr[0][0] = 0
+//	for j := 1; j < len(arr[0]); j++ {
+//		arr[0][j] =  f(house[j], house[0]) + arr[0][j-1]
+//	}
+//	for i := 1; i < len(arr); i++ {
+//		arr[i][0] = arr[0][i]
+//	}
+//	// 逐行填表
+//	for i := 1; i < len(arr); i++ {
+//		for j := 1; j < len(arr[0]); j++ {
+//			arr[i][j] = f(house[i], house[j]) + arr[i][j-1]
+//		}
+//		if arr[i][len(arr[0])-1] > arr[i][len(arr[0])-1] {
+//			arr[i][len(arr[0])-1] = arr[i][len(arr[0])-1]
+//		}
+//	}
+//	fmt.Println(arr[len(arr)-1][len(arr[0])-1])
+//}
+//
+//func f(x, y int) int {
+//	if x > y {
+//		return x - y
+//	}
+//	return y - x
+//}
+
+/*
+a:=0
+	b:=0
+	for {
+		n, _ := fmt.Scan(&a,&b)
+		if n == 0 {
+			break
+		} else {
+			fmt.Printf("%d\n",a+b)
 		}
-		if j < len(b) {
-			edit += len(b)-j
-		}
-		if edit < minDist {
-			minDist = edit
-		}
-		return
 	}
-	if a[i] == b[j] { // 相等不用增加
-		f(a, b, i+1, j+1, edit)
-	} else {
-		// 删除a[i]或者b[j]前添加一个字符
-		f(a, b, i+1, j, edit+1)
-		// 删除b[j]或者a[i]前添加一个字符
-		f(a, b, i, j+1, edit+1)
-		// 将a[i]和b[j]替换为相同字符
-		f(a, b, i+1, j+1, edit+1)
-	}
-}
+ */
+
+/*
+n:=0
+    ans:=0
+
+    fmt.Scan(&n)
+    for i := 0; i < n; i++ {
+        for j := 0; j < n; j++ {
+            x:=0
+            fmt.Scan(&x)
+            ans = ans + x
+        }
+    }
+    fmt.Printf("%d\n",ans)
+ */

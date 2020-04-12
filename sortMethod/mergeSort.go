@@ -1,32 +1,45 @@
 package sortMethod
 
-func MergeSort(arr []int) []int {
-	len := len(arr)
-	if len <= 1 {
-		return arr
+func MergeSort(arr []int) {
+	if len(arr) <= 1 {
+		return
 	}
-	middle := len / 2
-	// 不断地进行左右对半划分
-	left := MergeSort(arr[:middle])
-	right := MergeSort(arr[middle:])
-	// 合并
-	return merge(left, right)
+	mergeSort(arr, 0, len(arr)-1)
 }
-// 从小到大排序.
-func merge(left, right []int) []int {
-	var result []int
-	l, r := 0, 0
-	for l < len(left) && r < len(right) {
-		if left[l] > right[r] {
-			result = append(result, right[r])
-			r++
+
+func mergeSort(arr []int, p, r int) {
+	// 递归终止条件
+	if p >= r {
+		return
+	}
+	middle := (p + r) / 2
+	// 不断地进行左右对半划分
+	mergeSort(arr, p, middle)
+	mergeSort(arr, middle+1, r)
+	// 合并
+	merge(arr, p, middle, r)
+}
+// merge 从小到大合并两个有序数组
+func merge(arr []int, p, middle, r int) {
+	temp := make([]int, 0)
+	i, j:= p, middle+1
+	for i <= middle && j <= r {
+		if arr[i] > arr[j] {
+			temp = append(temp, arr[j])
+			j++
 		} else {
-			result = append(result, left[l])
-			l++
+				temp = append(temp, arr[i])
+				i++
 		}
 	}
 	// 把左右边剩余的数移入数组
-	result = append(result, left[l:]...)
-	result = append(result, right[r:]...)
-	return result
+	if i > middle {
+		temp = append(temp, arr[j:r+1]...)
+	} else {
+		temp = append(temp, arr[i:middle+1]...)
+	}
+	// 将temp修改到arr中
+	for i, v := range temp {
+		arr[p + i] = v
+	}
 }

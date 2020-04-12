@@ -1,5 +1,11 @@
 package sortMethod
 
+/*
++ 原地排序：是
++ 稳定算法：是
++ 时间复杂度：O(N^2)
+ */
+
 func InsertSort(arr []int) {
 	length := len(arr)
 	if length <= 1 {
@@ -14,7 +20,7 @@ func InsertSort(arr []int) {
 			} else {
 				break
 			}
-			arr[j+1] = value
 		}
+		arr[j+1] = value
 	}
 }

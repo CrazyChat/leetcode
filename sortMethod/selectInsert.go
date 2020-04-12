@@ -1,5 +1,11 @@
 package sortMethod
 
+/*
++ 原地排序：是
++ 稳定算法：否
++ 时间复杂度：O(N^2)
+ */
+
 func SelectSort(arr []int) {
 	length := len(arr)
 	if length <= 1 {
@@ -16,5 +22,4 @@ func SelectSort(arr []int) {
 			arr[minIndex], arr[i] = arr[i], arr[minIndex]
 		}
 	}
-	return
 }

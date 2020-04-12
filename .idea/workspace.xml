@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3a9c6fb2-5cc7-4af8-83bb-71efdc0ca03d" name="默认更改列表" comment="">
-      <change beforePath="$PROJECT_DIR$/structure/queue.go" beforeDir="false" afterPath="$PROJECT_DIR$/structure/queue.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sortMethod/bubble.go" beforeDir="false" afterPath="$PROJECT_DIR$/sortMethod/bubble.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sortMethod/insertSort.go" beforeDir="false" afterPath="$PROJECT_DIR$/sortMethod/insertSort.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sortMethod/selectInsert.go" beforeDir="false" afterPath="$PROJECT_DIR$/sortMethod/selectInsert.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,10 +16,19 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/structure/queue.go">
+        <entry file="file://$PROJECT_DIR$/sortMethod/shellSort.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="8" column="11" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
+            <state relative-caret-position="672">
+              <caret line="28" column="11" lean-forward="true" selection-start-line="28" selection-start-column="11" selection-end-line="28" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/main.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="168">
+              <caret line="10" column="18" lean-forward="true" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -49,6 +61,7 @@
       <find>value</find>
       <find>the node no exists</find>
       <find>fmt</find>
+      <find>fix</find>
     </findStrings>
   </component>
   <component name="GOROOT" path="/usr/local/go" />
@@ -58,12 +71,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/mix/queen.go" />
-        <option value="$PROJECT_DIR$/structure/testStack.go" />
-        <option value="$PROJECT_DIR$/structure/stack_test.go" />
         <option value="$PROJECT_DIR$/structure/linkedList.go" />
         <option value="$PROJECT_DIR$/structure/heap.go" />
-        <option value="$PROJECT_DIR$/sortMethod/insertSort.go" />
         <option value="$PROJECT_DIR$/string/lengthOfLongestSubstring.go" />
         <option value="$PROJECT_DIR$/string/longestCommonPrefix.go" />
         <option value="$PROJECT_DIR$/leetcodestr/lengthOfLongestSubstring.go" />
@@ -106,9 +115,13 @@
         <option value="$PROJECT_DIR$/array/nextGreaterElement2.go" />
         <option value="$PROJECT_DIR$/array/countDigitOne.go" />
         <option value="$PROJECT_DIR$/mix/findContinuousSequence.go" />
-        <option value="$PROJECT_DIR$/main.go" />
         <option value="$PROJECT_DIR$/structure/stack.go" />
         <option value="$PROJECT_DIR$/structure/queue.go" />
+        <option value="$PROJECT_DIR$/sortMethod/bubble.go" />
+        <option value="$PROJECT_DIR$/sortMethod/insertSort.go" />
+        <option value="$PROJECT_DIR$/sortMethod/selectInsert.go" />
+        <option value="$PROJECT_DIR$/sortMethod/shellSort.go" />
+        <option value="$PROJECT_DIR$/main.go" />
       </list>
     </option>
   </component>
@@ -135,7 +148,11 @@
             <path>
               <item name="leetcode" type="b2602c69:ProjectViewProjectNode" />
               <item name="leetcode" type="462c0819:PsiDirectoryNode" />
-              <item name="structure" type="462c0819:PsiDirectoryNode" />
+              <item name="sortMethod" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="leetcode" type="b2602c69:ProjectViewProjectNode" />
+              <item name="外部库" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
@@ -272,12 +289,12 @@
     <frame x="0" y="23" width="1440" height="877" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21030043" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21030043" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32769832" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.2873862" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2873862" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -302,23 +319,6 @@
     <proxy>https://goproxy.cn</proxy>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/leetcodestr/checkInclusion.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2160">
-          <caret line="92" column="5" lean-forward="true" selection-start-line="86" selection-start-column="4" selection-end-line="92" selection-end-column="5" />
-          <folding>
-            <element signature="e#1402#1422#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/leetcodestr/simplifyPath.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/leetcodestr/multiply.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="392">
@@ -537,27 +537,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="471">
           <caret line="43" column="1" lean-forward="true" selection-start-line="12" selection-start-column="2" selection-end-line="43" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sortMethod/bubble.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="109">
-          <caret line="12" column="17" lean-forward="true" selection-start-line="11" selection-start-column="5" selection-end-line="12" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sortMethod/selectInsert.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="17" column="3" lean-forward="true" selection-start-line="17" selection-start-column="3" selection-end-line="17" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sortMethod/insertSort.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="9" column="19" lean-forward="true" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="19" />
         </state>
       </provider>
     </entry>
@@ -807,16 +786,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-          <folding>
-            <element signature="e#14#74#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/structure/linkedList.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-335">
@@ -826,8 +795,50 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/structure/queue.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="8" column="11" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
+        <state relative-caret-position="140">
+          <caret line="14" column="13" lean-forward="true" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/go/src/container/heap/heap.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="77" column="1" lean-forward="true" selection-start-line="77" selection-start-column="1" selection-end-line="77" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sortMethod/bubble.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="6" column="3" lean-forward="true" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sortMethod/selectInsert.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sortMethod/insertSort.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="10" column="18" lean-forward="true" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sortMethod/shellSort.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="672">
+          <caret line="28" column="11" lean-forward="true" selection-start-line="28" selection-start-column="11" selection-end-line="28" selection-end-column="11" />
         </state>
       </provider>
     </entry>

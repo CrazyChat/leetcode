@@ -1,9 +1,11 @@
 package sortMethod
 
 /*
-时间复杂度：O(N^2)
++ 原地排序：是
++ 稳定算法：是
++ 时间复杂度：O(N^2)
  */
-func Bubbll(arr []int) {
+func Bubble(arr []int) {
 	length := len(arr)
 	if length <= 1 {
 		return
@@ -17,7 +19,7 @@ func Bubbll(arr []int) {
 				flag = true
 			}
 		}
-		if (!flag) {
+		if !flag {
 			// 满足条件说明本循环一次也没发生交换，说明数组已经排列好了
 			break
 		}

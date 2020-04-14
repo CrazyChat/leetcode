@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="3a9c6fb2-5cc7-4af8-83bb-71efdc0ca03d" name="默认更改列表" comment="">
       <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sortMethod/quickSort.go" beforeDir="false" afterPath="$PROJECT_DIR$/sortMethod/quickSort.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,10 +13,19 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/sortMethod/quickSort.go">
+        <entry file="file://$PROJECT_DIR$/structure/priorityQueue.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="637">
-              <caret line="30" column="1" lean-forward="true" selection-start-line="2" selection-end-line="30" selection-end-column="1" />
+            <state relative-caret-position="365">
+              <caret line="46" column="26" lean-forward="true" selection-start-line="46" selection-start-column="26" selection-end-line="46" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/main.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="396">
+              <caret line="26" column="31" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -47,10 +55,10 @@
       <find>removeNode</find>
       <find>Pre</find>
       <find>Get</find>
-      <find>value</find>
       <find>the node no exists</find>
       <find>fix</find>
       <find>fmt</find>
+      <find>value</find>
     </findStrings>
   </component>
   <component name="GOROOT" path="/usr/local/go" />
@@ -60,8 +68,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/string/lengthOfLongestSubstring.go" />
-        <option value="$PROJECT_DIR$/string/longestCommonPrefix.go" />
         <option value="$PROJECT_DIR$/leetcodestr/lengthOfLongestSubstring.go" />
         <option value="$PROJECT_DIR$/leetcodestr/checkInclusion.go" />
         <option value="$PROJECT_DIR$/leetcodestr/addStrings.go" />
@@ -108,9 +114,11 @@
         <option value="$PROJECT_DIR$/sortMethod/insertSort.go" />
         <option value="$PROJECT_DIR$/sortMethod/selectInsert.go" />
         <option value="$PROJECT_DIR$/sortMethod/shellSort.go" />
-        <option value="$PROJECT_DIR$/main.go" />
         <option value="$PROJECT_DIR$/sortMethod/mergeSort.go" />
         <option value="$PROJECT_DIR$/sortMethod/quickSort.go" />
+        <option value="$PROJECT_DIR$/structure/PriorityQueue.go" />
+        <option value="$PROJECT_DIR$/structure/priorityQueue.go" />
+        <option value="$PROJECT_DIR$/main.go" />
       </list>
     </option>
   </component>
@@ -137,7 +145,7 @@
             <path>
               <item name="leetcode" type="b2602c69:ProjectViewProjectNode" />
               <item name="leetcode" type="462c0819:PsiDirectoryNode" />
-              <item name="sortMethod" type="462c0819:PsiDirectoryNode" />
+              <item name="structure" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="leetcode" type="b2602c69:ProjectViewProjectNode" />
@@ -278,12 +286,12 @@
     <frame x="0" y="23" width="1440" height="877" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21030043" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21030043" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32769832" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.16254877" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2860858" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -308,20 +316,6 @@
     <proxy>https://goproxy.cn</proxy>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/leetcodestr/multiply.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="52" column="2" lean-forward="true" selection-start-line="52" selection-start-column="2" selection-end-line="54" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/go/src/bytes/buffer.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-667">
-          <caret line="19" column="11" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/leetcodestr/reverseWords.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
@@ -439,27 +433,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/structure/heap.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="14" column="24" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="24" />
-          <folding>
-            <element signature="n#!!block;n#NewHeap#0" />
-            <element signature="n#!!block;n#Insert#0" />
-            <element signature="n#!!block;n#MoveTop#0" />
-            <element signature="e#599#631#0" />
-            <element signature="e#668#682#0" />
-            <element signature="n#!!block;n#GetArr#0" />
-            <element signature="e#1017#1049#0" />
-            <element signature="e#1134#1170#0" />
-            <element signature="e#1223#1237#0" />
-            <element signature="n#!!block;n#Count#0" />
-            <element signature="n#!!block;n#Cap#0" />
-            <element signature="e#1473#1488#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/array/findLengthOfLCIS.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="212">
@@ -540,69 +513,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="183">
           <caret line="40" selection-start-line="40" selection-start-column="2" selection-end-line="48" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/structure/binarytree.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="151" column="11" lean-forward="true" selection-start-line="151" selection-start-column="11" selection-end-line="151" selection-end-column="11" />
-          <folding>
-            <element signature="e#48#83#0" />
-            <element signature="e#66#92#0" />
-            <element signature="e#107#161#0" />
-            <element signature="n#!!block;n#NewTree#0" />
-            <element signature="n#!!block;n#Insert#0" />
-            <element signature="e#338#368#0" />
-            <element signature="e#421#754#0" />
-            <element signature="e#464#600#0" />
-            <element signature="e#522#556#0" />
-            <element signature="e#562#596#0" />
-            <element signature="e#606#751#0" />
-            <element signature="e#675#686#0" />
-            <element signature="e#675#708#0" />
-            <element signature="e#714#747#0" />
-            <element signature="n#!!block;n#Find#0" />
-            <element signature="e#876#1076#0" />
-            <element signature="e#920#943#0" />
-            <element signature="e#974#1020#0" />
-            <element signature="e#1026#1073#0" />
-            <element signature="n#!!block;n#Delete#0" />
-            <element signature="e#1157#1203#0" />
-            <element signature="e#1350#1475#0" />
-            <element signature="e#1403#1446#0" />
-            <element signature="e#1504#1550#0" />
-            <element signature="e#1628#1938#0" />
-            <element signature="e#1733#1791#0" />
-            <element signature="e#2109#2147#0" />
-            <element signature="e#2050#2084#0" />
-            <element signature="e#2138#2173#0" />
-            <element signature="e#2172#2207#0" />
-            <element signature="e#2246#2286#0" />
-            <element signature="e#2292#2333#0" />
-            <element signature="n#!!block;n#PreOrder#0" />
-            <element signature="n#!!block;n#PreNode#0" />
-            <element signature="e#2543#2556#0" />
-            <element signature="e#2575#2594#0" />
-            <element signature="n#!!block;n#InOrder#0" />
-            <element signature="n#!!block;n#InNode#0" />
-            <element signature="e#2744#2757#0" />
-            <element signature="e#2795#2814#0" />
-            <element signature="n#!!block;n#PostOrder#0" />
-            <element signature="n#!!block;n#PostNode#0" />
-            <element signature="e#2958#2971#0" />
-            <element signature="e#2983#3002#0" />
-            <element signature="n#!!block;n#Height#0" />
-            <element signature="n#!!block;n#getHeight#0" />
-            <element signature="e#3183#3198#0" />
-            <element signature="e#3303#3331#0" />
-            <element signature="n#!!block;n#Min#0" />
-            <element signature="e#3448#3497#0" />
-            <element signature="e#3523#3552#0" />
-            <element signature="n#!!block;n#Max#0" />
-            <element signature="e#3671#3720#0" />
-            <element signature="e#3747#3777#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -803,20 +713,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sortMethod/mergeSort.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="13" column="3" lean-forward="true" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="9" column="27" lean-forward="true" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sortMethod/selectInsert.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -826,8 +722,75 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sortMethod/quickSort.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="637">
-          <caret line="30" column="1" lean-forward="true" selection-start-line="2" selection-end-line="30" selection-end-column="1" />
+        <state relative-caret-position="192">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sortMethod/mergeSort.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="816">
+          <caret line="34" column="17" lean-forward="true" selection-start-line="34" selection-start-column="17" selection-end-line="34" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/structure/binarytree.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="611">
+          <caret line="151" column="11" lean-forward="true" selection-start-line="151" selection-start-column="11" selection-end-line="151" selection-end-column="11" />
+          <folding>
+            <element signature="n#!!block;n#NewTree#0" />
+            <element signature="n#!!block;n#Insert#0" />
+            <element signature="n#!!block;n#Find#0" />
+            <element signature="n#!!block;n#Delete#0" />
+            <element signature="n#!!block;n#PreOrder#0" />
+            <element signature="n#!!block;n#PreNode#0" />
+            <element signature="n#!!block;n#InOrder#0" />
+            <element signature="n#!!block;n#InNode#0" />
+            <element signature="n#!!block;n#PostOrder#0" />
+            <element signature="n#!!block;n#PostNode#0" />
+            <element signature="n#!!block;n#Height#0" />
+            <element signature="n#!!block;n#getHeight#0" />
+            <element signature="n#!!block;n#Min#0" />
+            <element signature="n#!!block;n#Max#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/structure/heap.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="14" column="24" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="24" />
+          <folding>
+            <element signature="n#!!block;n#NewHeap#0" />
+            <element signature="n#!!block;n#Insert#0" />
+            <element signature="n#!!block;n#MoveTop#0" />
+            <element signature="e#599#631#0" />
+            <element signature="n#!!block;n#GetArr#0" />
+            <element signature="n#!!block;n#heapify#0" />
+            <element signature="e#1017#1049#0" />
+            <element signature="e#1134#1170#0" />
+            <element signature="e#1223#1237#0" />
+            <element signature="n#!!block;n#Count#0" />
+            <element signature="n#!!block;n#Cap#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go.mod">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="26" column="31" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/structure/priorityQueue.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="365">
+          <caret line="46" column="26" lean-forward="true" selection-start-line="46" selection-start-column="26" selection-end-line="46" selection-end-column="26" />
         </state>
       </provider>
     </entry>

@@ -6,6 +6,6 @@ import (
 )
 
 func main() {
-	heights := []int{0,9}
-	fmt.Println(oneWayStack.LargestRectangleArea(heights))
+	heights := []int{0,1,0,1}
+	fmt.Println(oneWayStack.Trap(heights))
 }

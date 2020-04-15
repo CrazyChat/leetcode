@@ -28,7 +28,7 @@ func LargestRectangleArea(heights []int) int {
 	zero := []int{0}
 	heights = append(zero, heights...)
 	heights = append(heights, 0)
-	stack := NewIncreaseStack()
+	stack := NewOneWayStack()
 	stack.Push(0)
 	maxArea := 0
 	for i, v := range heights {
@@ -40,33 +40,4 @@ func LargestRectangleArea(heights []int) int {
 		stack.Push(i)
 	}
 	return maxArea
-}
-
-type IncreaseStack []int
-
-func NewIncreaseStack() IncreaseStack {
-	return IncreaseStack{}
-}
-
-func (s IncreaseStack) Len() int {
-	return len(s)
-}
-
-func (s IncreaseStack) Top() int {
-	return s[len(s)-1]
-}
-
-func (s IncreaseStack) Bottom() int {
-	return s[0]
-}
-
-func (s *IncreaseStack) Push(val int) {
-	*s = append(*s, val)
-}
-
-func (s *IncreaseStack) Pop() int {
-	old := *s
-	index := old[len(old)-1]
-	*s = old[:len(old)-1]
-	return index
 }

@@ -1,4 +1,4 @@
-package array
+package oneWayStack
 
 /*
 496. 下一个更大元素 I

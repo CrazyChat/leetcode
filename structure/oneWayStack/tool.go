@@ -15,6 +15,10 @@ func (s OneWayStack) Top() int {
 	return s[len(s)-1]
 }
 
+func (s OneWayStack) Bottom() int {
+	return s[0]
+}
+
 func (s *OneWayStack) Push(val int) {
 	*s = append(*s, val)
 }
@@ -25,8 +29,6 @@ func (s *OneWayStack) Pop() int {
 	*s = old[:len(old)-1]
 	return index
 }
-
-
 
 func max(i, j int) int {
 	if i > j {

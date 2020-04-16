@@ -6,6 +6,6 @@ import (
 )
 
 func main() {
-	heights := []int{0,1,0,1}
-	fmt.Println(oneWayStack.Trap(heights))
+	heights := []int{1,2,1}
+	fmt.Println(oneWayStack.NextGreaterElements(heights))
 }

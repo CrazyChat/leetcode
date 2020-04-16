@@ -1,11 +1,11 @@
-package meituan
+package interview
 
 import (
 	"fmt"
 	"sort"
 )
 
-/*
+/* 美团
 max xor min
 时间限制：C/C++语言 1000MS；其他语言 3000MS
 内存限制：C/C++语言 65536KB；其他语言 589824KB

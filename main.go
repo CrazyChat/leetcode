@@ -6,12 +6,7 @@ import (
 )
 
 func main() {
-	queue := stack.MyQueueConstructor()
-	queue.Push(1)
-	queue.Push(2)
-	fmt.Println(queue.Peek())
-	fmt.Println(queue.Pop())
-	fmt.Println(queue.Empty())
+	fmt.Println(stack.BackspaceCompare("nzp#o#g", "b#nzp#o#g"))
 }
 
 

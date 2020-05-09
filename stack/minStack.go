@@ -32,7 +32,8 @@ type MinStackNode struct {
 }
 
 /** initialize your data structure here. */
-func Constructor() MinStack {
+// Constructor
+func MinStackNodeConstructor() MinStack {
 	return MinStack{&MinStackNode{min: math.MaxInt64, next: nil}}
 }
 

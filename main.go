@@ -6,7 +6,7 @@ import (
 )
 
 func main() {
-	fmt.Println(stack.BackspaceCompare("nzp#o#g", "b#nzp#o#g"))
+	fmt.Println(stack.Calculate("(1+(4+5+2)-3)+(6+8)"))
 }
 
 

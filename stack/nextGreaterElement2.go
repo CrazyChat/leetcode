@@ -1,4 +1,4 @@
-package oneWayStack
+package stack
 
 /*
 503. 下一个更大元素 II
@@ -12,7 +12,7 @@ package oneWayStack
 数字 2 找不到下一个更大的数；
 第二个 1 的下一个最大的数需要循环搜索，结果也是 2。
 注意: 输入数组的长度不会超过 10000。
- */
+*/
 
 // 单调递减栈
 func NextGreaterElements(nums []int) []int {
@@ -28,7 +28,7 @@ func NextGreaterElements(nums []int) []int {
 	stack.Push(0)
 	// 先走一遍，初步存储数据
 	for i := 1; i < len(nums); i++ {
-		for stack.Len() != 0 &&  nums[i] > nums[stack.Top()] {
+		for stack.Len() != 0 && nums[i] > nums[stack.Top()] {
 			resultNums[stack.Pop()] = nums[i]
 		}
 		stack.Push(i)

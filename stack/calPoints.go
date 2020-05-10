@@ -28,7 +28,7 @@ https://leetcode-cn.com/problems/baseball-game/
  */
 func CalPoints(ops []string) int {
 	length := len(ops)
-	s := Stack{}
+	s := CalStack{}
 	for i := 0; i < length; i++ {
 		switch ops[i] {
 		case "+":
@@ -49,9 +49,9 @@ func CalPoints(ops []string) int {
 	return result
 }
 
-type Stack []int
+type CalStack []int
 
-func (s Stack) TopTwoSum() int {
+func (s CalStack) TopTwoSum() int {
 	if len(s) - 2 >= 0 {
 		return s[len(s)-1] + s[len(s)-2]
 	} else if len(s) - 1 >= 0 {
@@ -61,23 +61,23 @@ func (s Stack) TopTwoSum() int {
 	}
 }
 
-func (s Stack) Top() int {
+func (s CalStack) Top() int {
 	if len(s) == 0 {
 		return 0
 	}
 	return s[len(s)-1]
 }
 
-func (s Stack) Len() int {
+func (s CalStack) Len() int {
 	return len(s)
 }
 
-func (s *Stack) Push(i int) {
+func (s *CalStack) Push(i int) {
 	old := *s
 	*s = append(old, i)
 }
 
-func (s *Stack) Pop() int {
+func (s *CalStack) Pop() int {
 	old := *s
 	*s = old[:len(old)-1]
 	return old[len(old)-1]

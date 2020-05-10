@@ -1,4 +1,4 @@
-package oneWayStack
+package stack
 
 /*
 示例:
@@ -6,7 +6,7 @@ package oneWayStack
 输入: [0,1,0,2,1,0,1,3,2,1,2,1]
 输出: 6
 LeetCode 42
- */
+*/
 
 // 按列求
 //func Trap(height []int) int {
@@ -45,7 +45,7 @@ LeetCode 42
 
 // 单调递减栈
 func Trap(height []int) int {
-	stack := NewOneWayStack()
+	stack := stack2.NewOneWayStack()
 	result := 0
 	stack.Push(0)
 	for i, v := range height {
@@ -54,7 +54,7 @@ func Trap(height []int) int {
 			if stack.Len() == 0 {
 				break
 			}
-			minHeight := min(height[stack.Top()], height[i])
+			minHeight := stack2.min(height[stack.Top()], height[i])
 			width := i - stack.Top() - 1
 			area := width * (minHeight - height[index])
 			result += area
@@ -63,4 +63,3 @@ func Trap(height []int) int {
 	}
 	return result
 }
-

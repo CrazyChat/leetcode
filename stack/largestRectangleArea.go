@@ -1,4 +1,6 @@
-package oneWayStack
+package stack
+
+import "github.com/crazychat/leetcode/structure/oneWayStack"
 
 /*
 84. 柱状图中最大的矩形
@@ -17,10 +19,10 @@ package oneWayStack
 栈 存储的是 索引
 高度是当前heights[i]，问题的关键是求宽度
 https://blog.csdn.net/Zolewit/article/details/88863970
- */
+*/
 
 func LargestRectangleArea(heights []int) int {
-	if len(heights) == 0  {
+	if len(heights) == 0 {
 		return 0
 	}
 	// 头部加0，充当哨兵，栈空的时候直接进栈
@@ -34,8 +36,8 @@ func LargestRectangleArea(heights []int) int {
 	for i, v := range heights {
 		for v < heights[stack.Top()] {
 			index := stack.Pop()
-			tempArea := (i - stack.Top()-1) * heights[index]
-			maxArea = max(maxArea, tempArea)
+			tempArea := (i - stack.Top() - 1) * heights[index]
+			maxArea = oneWayStack.max(maxArea, tempArea)
 		}
 		stack.Push(i)
 	}

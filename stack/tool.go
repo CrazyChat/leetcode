@@ -1,4 +1,4 @@
-package oneWayStack
+package stack
 
 // 单调递增或递减栈
 type OneWayStack []int

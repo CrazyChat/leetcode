@@ -6,6 +6,10 @@ type TreeNode struct {
 	Right *TreeNode
 }
 
+/*
+	687 最长同值路径
+*/
+
 func longestUnivaluePath(root *TreeNode) int {
 	result := 0
 	f(root, &result)

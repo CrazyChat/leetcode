@@ -4,37 +4,17 @@
     <list default="true" id="3a9c6fb2-5cc7-4af8-83bb-71efdc0ca03d" name="默认更改列表" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sortMethod/bubble.go" beforeDir="false" afterPath="$PROJECT_DIR$/sortMethod/bubble.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sortMethod/countingSort.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sortMethod/mergeSort.go" beforeDir="false" afterPath="$PROJECT_DIR$/sortMethod/mergeSort.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sortMethod/quickSort.go" beforeDir="false" afterPath="$PROJECT_DIR$/sortMethod/quickSort.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/structure/lru.go" beforeDir="false" afterPath="$PROJECT_DIR$/structure/lru.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tree/maxDepth.go" beforeDir="false" afterPath="$PROJECT_DIR$/tree/maxDepth.go" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/main.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
-              <folding>
-                <element signature="e#14#70#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/stack/calPoints.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1329">
-              <caret line="77" column="1" selection-start-line="77" selection-start-column="1" selection-end-line="77" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -43,135 +23,34 @@
       </list>
     </option>
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>arr</find>
-      <find>left</find>
-      <find>numsSize</find>
-      <find>len</find>
-      <find>ValType</find>
-      <find>valType</find>
-      <find>ListNode</find>
-      <find>Val</find>
-      <find>Print</find>
-      <find>int</find>
-      <find>buffer</find>
-      <find>removeNode</find>
-      <find>Pre</find>
-      <find>Get</find>
-      <find>the node no exists</find>
-      <find>fix</find>
-      <find>fmt</find>
-      <find>value</find>
-    </findStrings>
-    <dirStrings>
-      <dir>$PROJECT_DIR$/mix</dir>
-    </dirStrings>
-  </component>
   <component name="GOROOT" path="/usr/local/go" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/array/findLengthOfLCIS.go" />
-        <option value="$PROJECT_DIR$/array/longestConsecutive.go" />
-        <option value="$PROJECT_DIR$/array/permute.go" />
-        <option value="$PROJECT_DIR$/array/getPermutation.go" />
-        <option value="$PROJECT_DIR$/array/findCircleNum.go" />
-        <option value="$PROJECT_DIR$/array/megerSection.go" />
-        <option value="$PROJECT_DIR$/array/trap.go" />
-        <option value="$PROJECT_DIR$/meituan/4.go" />
-        <option value="$PROJECT_DIR$/meituan/1.go" />
-        <option value="$PROJECT_DIR$/meituan/3.go" />
-        <option value="$PROJECT_DIR$/structure/binarytree.go" />
-        <option value="$PROJECT_DIR$/dynamic/minimumTotal.go" />
-        <option value="$PROJECT_DIR$/leetcodestr/longestCommonSubsequence.go" />
-        <option value="$PROJECT_DIR$/dynamic/longestCommonSubsequence.go" />
-        <option value="$PROJECT_DIR$/dynamic/maxProfit.go" />
-        <option value="$PROJECT_DIR$/dynamic/maxProfit2.go" />
-        <option value="$PROJECT_DIR$/structure/lru.go" />
-        <option value="$PROJECT_DIR$/structure/minStack.go" />
-        <option value="$PROJECT_DIR$/meituan/2.go" />
-        <option value="$PROJECT_DIR$/meituan/minDifference.go" />
-        <option value="$PROJECT_DIR$/dynamic/maximalSquare.go" />
-        <option value="$PROJECT_DIR$/meituan/circleLeaveVal.go" />
-        <option value="$PROJECT_DIR$/meituan/5.go" />
-        <option value="$PROJECT_DIR$/array/nextGreaterElement.go" />
-        <option value="$PROJECT_DIR$/array/nextGreaterElement2.go" />
-        <option value="$PROJECT_DIR$/array/countDigitOne.go" />
-        <option value="$PROJECT_DIR$/mix/findContinuousSequence.go" />
-        <option value="$PROJECT_DIR$/structure/stack.go" />
-        <option value="$PROJECT_DIR$/structure/queue.go" />
-        <option value="$PROJECT_DIR$/sortMethod/bubble.go" />
-        <option value="$PROJECT_DIR$/sortMethod/insertSort.go" />
-        <option value="$PROJECT_DIR$/sortMethod/selectInsert.go" />
-        <option value="$PROJECT_DIR$/sortMethod/shellSort.go" />
-        <option value="$PROJECT_DIR$/sortMethod/mergeSort.go" />
-        <option value="$PROJECT_DIR$/sortMethod/quickSort.go" />
-        <option value="$PROJECT_DIR$/structure/PriorityQueue.go" />
-        <option value="$PROJECT_DIR$/structure/priorityQueue.go" />
-        <option value="$PROJECT_DIR$/structure/oneWayStack/nextGreaterElement.go" />
-        <option value="$PROJECT_DIR$/structure/oneWayStack/largestRectangleArea.go" />
-        <option value="$PROJECT_DIR$/structure/oneWayStack/trap.go" />
-        <option value="$PROJECT_DIR$/structure/oneWayStack/tool.go" />
-        <option value="$PROJECT_DIR$/structure/oneWayStack/nextGreaterElement2.go" />
-        <option value="$PROJECT_DIR$/interview/circleLeaveVal.go" />
-        <option value="$PROJECT_DIR$/interview/maxOrMin.go" />
-        <option value="$PROJECT_DIR$/interview/minDifference.go" />
-        <option value="$PROJECT_DIR$/interview/randomReduce.go" />
-        <option value="$PROJECT_DIR$/go_test.go" />
-        <option value="$PROJECT_DIR$/interview/waysCount.go" />
-        <option value="$PROJECT_DIR$/interview/redPackets.go" />
-        <option value="$PROJECT_DIR$/main.go" />
-        <option value="$PROJECT_DIR$/stack/calPoints.go" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
-    <option name="width" value="1440" />
-    <option name="height" value="877" />
-  </component>
+  <component name="ProjectId" id="1fWjLHBUqU8fGIPa4Mid5AoAQl9" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="添加" />
   </component>
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="leetcode" type="b2602c69:ProjectViewProjectNode" />
-              <item name="leetcode" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="leetcode" type="b2602c69:ProjectViewProjectNode" />
-              <item name="外部库" type="cb654da1:ExternalLibrariesNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-    </panes>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultGoTemplateProperty" value="Go File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="configurable.Global.GOPATH.is.expanded" value="true" />
+    <property name="configurable.Module.GOPATH.is.expanded" value="false" />
+    <property name="configurable.Project.GOPATH.is.expanded" value="true" />
     <property name="go.gopath.indexing.explicitly.defined" value="true" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.language" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -181,20 +60,8 @@
       <recent name="$PROJECT_DIR$/everyday" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
   <component name="RunManager" selected="Go Build.go build main.go">
-    <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" nameIsGenerated="true">
+    <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="leetcode" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="FILE" />
@@ -249,6 +116,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build main.go" />
         <item itemvalue="Go Test.TestStack_int in github.com/crazychat/leetcode/structure" />
         <item itemvalue="Go Test.TestStack_Pop in github.com/crazychat/leetcode/structure" />
         <item itemvalue="Go Test.TestStack_Top in github.com/crazychat/leetcode/structure" />
@@ -256,6 +124,7 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TestHistory">
     <history-entry file="TestStack_Len_in_github_com_crazychat_leetcode_structure - 2020.03.26 at 11h 39m 53s.xml">
       <configuration name="TestStack_Len in github.com/crazychat/leetcode/structure" configurationId="GoTestRunConfiguration" />
@@ -285,411 +154,83 @@
       <configuration name="TestStack_int in github.com/crazychat/leetcode/structure" configurationId="GoTestRunConfiguration" />
     </history-entry>
   </component>
-  <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="877" extended-state="6" />
-    <editor active="true" />
-    <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21316166" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32769832" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.38231468" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32899868" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="bottom" id="调试" order="12" weight="0.32899868" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Database" order="3" />
-    </layout>
-  </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
+    <environment>
+      <map>
+        <entry key="GOPROXY" value="https://goproxy.cn,direct" />
+      </map>
+    </environment>
     <proxy>https://goproxy.cn</proxy>
   </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/array/threeSum.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1272">
-          <caret line="55" column="24" selection-start-line="55" selection-start-column="24" selection-end-line="55" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dynamic/maxProfit.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="36" column="13" selection-start-line="36" selection-start-column="4" selection-end-line="36" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dynamic/maxProfit2.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="426">
-          <caret line="93" column="24" lean-forward="true" selection-start-line="63" selection-start-column="2" selection-end-line="93" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dynamic/longestCommonSubsequence.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="61" column="22" selection-start-line="61" selection-start-column="22" selection-end-line="61" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/structure/minStack.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="66" column="3" lean-forward="true" selection-start-line="66" selection-start-column="3" selection-end-line="66" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dynamic/minimumTotal.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1536">
-          <caret line="64" column="81" selection-start-line="64" selection-start-column="80" selection-end-line="64" selection-end-column="81" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dynamic/maximalSquare.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="71" column="9" lean-forward="true" selection-start-line="71" selection-start-column="9" selection-end-line="71" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/array/nextGreaterElement.go" />
-    <entry file="file://$PROJECT_DIR$/array/nextGreaterElement2.go" />
-    <entry file="file://$PROJECT_DIR$/array/countDigitOne.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="39" column="3" lean-forward="true" selection-start-line="39" selection-start-column="3" selection-end-line="39" selection-end-column="3" />
-          <folding>
-            <element signature="e#15#44#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mix/findContinuousSequence.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="24" column="6" lean-forward="true" selection-start-line="24" selection-start-column="6" selection-end-line="24" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/structure/lru.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="16" column="16" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="16" />
-          <folding>
-            <element signature="n#!!block;n#Constructor#0" />
-            <element signature="n#!!block;n#Get#0" />
-            <element signature="n#!!block;n#Put#0" />
-            <element signature="n#!!block;n#putHead#0" />
-            <element signature="n#!!block;n#remove#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/structure/stack.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="101" column="1" lean-forward="true" selection-start-line="51" selection-end-line="101" selection-end-column="1" />
-          <folding>
-            <element signature="e#63#82#0" />
-            <element signature="n#!!block;n#NewArrStack#0" />
-            <element signature="n#!!block;n#Len#0" />
-            <element signature="e#814#825#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/structure/linkedList.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-335">
-          <caret line="2" column="8" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/go/src/container/heap/heap.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="77" column="1" lean-forward="true" selection-start-line="77" selection-start-column="1" selection-end-line="77" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sortMethod/bubble.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="6" column="3" lean-forward="true" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sortMethod/insertSort.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/go/src/builtin/builtin.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="157" column="5" selection-start-line="157" selection-start-column="5" selection-end-line="157" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sortMethod/selectInsert.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sortMethod/quickSort.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sortMethod/mergeSort.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="816">
-          <caret line="34" column="17" lean-forward="true" selection-start-line="34" selection-start-column="17" selection-end-line="34" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/structure/binarytree.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="611">
-          <caret line="151" column="11" lean-forward="true" selection-start-line="151" selection-start-column="11" selection-end-line="151" selection-end-column="11" />
-          <folding>
-            <element signature="n#!!block;n#NewTree#0" />
-            <element signature="n#!!block;n#Insert#0" />
-            <element signature="n#!!block;n#Find#0" />
-            <element signature="n#!!block;n#Delete#0" />
-            <element signature="n#!!block;n#PreOrder#0" />
-            <element signature="n#!!block;n#PreNode#0" />
-            <element signature="n#!!block;n#InOrder#0" />
-            <element signature="n#!!block;n#InNode#0" />
-            <element signature="n#!!block;n#PostOrder#0" />
-            <element signature="n#!!block;n#PostNode#0" />
-            <element signature="n#!!block;n#Height#0" />
-            <element signature="n#!!block;n#getHeight#0" />
-            <element signature="n#!!block;n#Min#0" />
-            <element signature="n#!!block;n#Max#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/structure/heap.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="14" column="24" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="24" />
-          <folding>
-            <element signature="n#!!block;n#NewHeap#0" />
-            <element signature="n#!!block;n#Insert#0" />
-            <element signature="n#!!block;n#MoveTop#0" />
-            <element signature="e#599#631#0" />
-            <element signature="n#!!block;n#GetArr#0" />
-            <element signature="n#!!block;n#heapify#0" />
-            <element signature="e#1017#1049#0" />
-            <element signature="e#1134#1170#0" />
-            <element signature="e#1223#1237#0" />
-            <element signature="n#!!block;n#Count#0" />
-            <element signature="n#!!block;n#Cap#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/structure/priorityQueue.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="924">
-          <caret line="46" column="26" lean-forward="true" selection-start-line="46" selection-start-column="26" selection-end-line="46" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go.mod">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/structure/oneWayStack/largestRectangleArea.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="36" column="36" selection-start-line="36" selection-start-column="19" selection-end-line="36" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/structure/oneWayStack/nextGreaterElement.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/structure/oneWayStack/trap.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="49" column="2" lean-forward="true" selection-start-line="49" selection-start-column="2" selection-end-line="49" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/structure/oneWayStack/nextGreaterElement2.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1344">
-          <caret line="56" column="1" selection-start-line="56" selection-start-column="1" selection-end-line="56" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/structure/oneWayStack/tool.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/meituan/3.go" />
-    <entry file="file://$PROJECT_DIR$/structure/queue.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="461">
-          <caret line="33" column="1" lean-forward="true" selection-start-line="4" selection-end-line="33" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/interview/circleLeaveVal.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="2" column="5" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/interview/minDifference.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="7" column="5" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/interview/maxOrMin.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="7" column="5" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/interview/360-随机减法.JPG">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/interview/randomReduce.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="3" column="10" lean-forward="true" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sortMethod/shellSort.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="648">
-          <caret line="27" column="12" lean-forward="true" selection-start-line="27" selection-start-column="12" selection-end-line="27" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/interview/waysCount.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-          <folding>
-            <element signature="e#19#47#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go_test.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="653">
-          <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/leetcodestr/addStrings.go">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/leetcodestr/checkInclusion.go">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/leetcodestr/lengthOfLongestSubstring.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="12" column="31" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/leetcodestr/longestCommonPrefix.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-18">
-          <caret line="9" column="11" lean-forward="true" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/leetcodestr/multiply.go">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/leetcodestr/reverseWords.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="648">
-          <caret line="30" column="17" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/leetcodestr/simplifyPath.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-288" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/everyday/longestPalindrome.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-288">
-          <caret line="4" column="19" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/interview/redPackets.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="648">
-          <caret line="27" column="16" selection-start-line="27" selection-start-column="16" selection-end-line="27" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
-          <folding>
-            <element signature="e#14#70#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/stack/calPoints.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1329">
-          <caret line="77" column="1" selection-start-line="77" selection-start-column="1" selection-end-line="77" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
+  <component name="WindowStateProjectService">
+    <state x="449" y="292" key="#Notifications" timestamp="1597243730402">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="449" y="292" key="#Notifications/0.23.1440.877@0.23.1440.877" timestamp="1597243730402" />
+    <state width="1398" height="267" key="GridCell.Tab.0.bottom" timestamp="1599982800204">
+      <screen x="1920" y="203" width="1440" height="877" />
+    </state>
+    <state width="1878" height="421" key="GridCell.Tab.0.bottom/1920.203.1440.877/0.23.1920.1057@0.23.1920.1057" timestamp="1599914700781" />
+    <state width="1398" height="267" key="GridCell.Tab.0.bottom/1920.203.1440.877/0.23.1920.1057@1920.203.1440.877" timestamp="1599982800204" />
+    <state width="1398" height="272" key="GridCell.Tab.0.bottom/263.1103.1440.877/0.23.1920.1057@0.23.1920.1057" timestamp="1596352818264" />
+    <state width="1878" height="421" key="GridCell.Tab.0.bottom/518.1103.1440.877/0.23.1920.1057@0.23.1920.1057" timestamp="1599905690145" />
+    <state width="1398" height="338" key="GridCell.Tab.0.bottom/518.1103.1440.877/0.23.1920.1057@518.1103.1440.877" timestamp="1599895252658" />
+    <state width="1398" height="267" key="GridCell.Tab.0.center" timestamp="1599982800203">
+      <screen x="1920" y="203" width="1440" height="877" />
+    </state>
+    <state width="1878" height="421" key="GridCell.Tab.0.center/1920.203.1440.877/0.23.1920.1057@0.23.1920.1057" timestamp="1599914700779" />
+    <state width="1398" height="267" key="GridCell.Tab.0.center/1920.203.1440.877/0.23.1920.1057@1920.203.1440.877" timestamp="1599982800203" />
+    <state width="1398" height="272" key="GridCell.Tab.0.center/263.1103.1440.877/0.23.1920.1057@0.23.1920.1057" timestamp="1596352818263" />
+    <state width="1878" height="421" key="GridCell.Tab.0.center/518.1103.1440.877/0.23.1920.1057@0.23.1920.1057" timestamp="1599905690145" />
+    <state width="1398" height="338" key="GridCell.Tab.0.center/518.1103.1440.877/0.23.1920.1057@518.1103.1440.877" timestamp="1599895252656" />
+    <state width="1398" height="267" key="GridCell.Tab.0.left" timestamp="1599982800203">
+      <screen x="1920" y="203" width="1440" height="877" />
+    </state>
+    <state width="1878" height="421" key="GridCell.Tab.0.left/1920.203.1440.877/0.23.1920.1057@0.23.1920.1057" timestamp="1599914700779" />
+    <state width="1398" height="267" key="GridCell.Tab.0.left/1920.203.1440.877/0.23.1920.1057@1920.203.1440.877" timestamp="1599982800203" />
+    <state width="1398" height="272" key="GridCell.Tab.0.left/263.1103.1440.877/0.23.1920.1057@0.23.1920.1057" timestamp="1596352818262" />
+    <state width="1878" height="421" key="GridCell.Tab.0.left/518.1103.1440.877/0.23.1920.1057@0.23.1920.1057" timestamp="1599905690144" />
+    <state width="1398" height="338" key="GridCell.Tab.0.left/518.1103.1440.877/0.23.1920.1057@518.1103.1440.877" timestamp="1599895252656" />
+    <state width="1398" height="267" key="GridCell.Tab.0.right" timestamp="1599982800204">
+      <screen x="1920" y="203" width="1440" height="877" />
+    </state>
+    <state width="1878" height="421" key="GridCell.Tab.0.right/1920.203.1440.877/0.23.1920.1057@0.23.1920.1057" timestamp="1599914700780" />
+    <state width="1398" height="267" key="GridCell.Tab.0.right/1920.203.1440.877/0.23.1920.1057@1920.203.1440.877" timestamp="1599982800204" />
+    <state width="1398" height="272" key="GridCell.Tab.0.right/263.1103.1440.877/0.23.1920.1057@0.23.1920.1057" timestamp="1596352818263" />
+    <state width="1878" height="421" key="GridCell.Tab.0.right/518.1103.1440.877/0.23.1920.1057@0.23.1920.1057" timestamp="1599905690145" />
+    <state width="1398" height="338" key="GridCell.Tab.0.right/518.1103.1440.877/0.23.1920.1057@518.1103.1440.877" timestamp="1599895252657" />
+    <state width="1878" height="358" key="GridCell.Tab.1.bottom" timestamp="1599886397368">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state width="1878" height="358" key="GridCell.Tab.1.bottom/1920.203.1440.877/0.23.1920.1057@0.23.1920.1057" timestamp="1599886397368" />
+    <state width="1878" height="358" key="GridCell.Tab.1.center" timestamp="1599886397368">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state width="1878" height="358" key="GridCell.Tab.1.center/1920.203.1440.877/0.23.1920.1057@0.23.1920.1057" timestamp="1599886397368" />
+    <state width="1878" height="358" key="GridCell.Tab.1.left" timestamp="1599886397368">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state width="1878" height="358" key="GridCell.Tab.1.left/1920.203.1440.877/0.23.1920.1057@0.23.1920.1057" timestamp="1599886397368" />
+    <state width="1878" height="358" key="GridCell.Tab.1.right" timestamp="1599886397368">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state width="1878" height="358" key="GridCell.Tab.1.right/1920.203.1440.877/0.23.1920.1057@0.23.1920.1057" timestamp="1599886397368" />
+    <state x="220" y="88" key="SettingsEditor" timestamp="1597244074389">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="220" y="88" key="SettingsEditor/0.23.1440.877@0.23.1440.877" timestamp="1597244074389" />
+    <state x="660" y="306" width="600" height="490" key="find.popup" timestamp="1599906315129">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state x="660" y="306" width="600" height="490" key="find.popup/518.1103.1440.877/0.23.1920.1057@0.23.1920.1057" timestamp="1599906315129" />
+    <state x="613" y="336" width="670" height="676" key="search.everywhere.popup" timestamp="1599902707612">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state x="613" y="336" width="670" height="676" key="search.everywhere.popup/263.1103.1440.877/0.23.1920.1057@0.23.1920.1057" timestamp="1596343671991" />
+    <state x="613" y="336" width="670" height="676" key="search.everywhere.popup/518.1103.1440.877/0.23.1920.1057@0.23.1920.1057" timestamp="1599902707612" />
   </component>
 </project>

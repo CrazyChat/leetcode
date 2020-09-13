@@ -6,22 +6,19 @@ package sortMethod
 + 时间复杂度：O(N^2)
  */
 func Bubble(arr []int) {
-	length := len(arr)
-	if length <= 1 {
+	if len(arr) <= 1 {
 		return
 	}
-	for i := 0; i < length; i++ {
-		// 提前退出冒泡循环的标志位
+	for i := 0; i < len(arr); i++ {
 		flag := false
-		for j := 0; j < length - 1 - i; j++ {
-			if arr[j] > arr[j+1] {
-				arr[j], arr[j+1] = arr[j+1], arr[j]
+		for j := 1; j < len(arr) - i; j++ {
+			if arr[j] < arr[j-1] {
 				flag = true
+				arr[j], arr[j-1] = arr[j-1], arr[j]
 			}
 		}
 		if !flag {
-			// 满足条件说明本循环一次也没发生交换，说明数组已经排列好了
-			break
+			return
 		}
 	}
 }

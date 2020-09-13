@@ -16,11 +16,14 @@ func quickSort(arr []int, p, r int) {
 	quickSort(arr, q+1, r)
 }
 
+/*
+i: 停留在大于 pivot 的索引
+j: 循环整个数组，当 j<pivot 时，将i、j位置数值交换，i++
+*/
 func partition(arr []int, p, r int) int {
 	pivot := arr[r]
 	i := p
 	for j := p; j <= r-1; j++ {
-		// < pivot移动i，否则不移动i => i停留的位置一直是大于pivot的数字
 		if arr[j] < pivot {
 			arr[i], arr[j] = arr[j], arr[i]
 			i++

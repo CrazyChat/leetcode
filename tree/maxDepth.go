@@ -6,12 +6,6 @@ package tree
 二叉树的深度为根节点到最远叶子节点的最长路径上的节点数。
 */
 
-type TreeNode struct {
-	Val   int
-	Left  *TreeNode
-	Right *TreeNode
-}
-
 func maxDepth(root *TreeNode) int {
 	if root == nil {
 		return 0

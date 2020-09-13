@@ -1,21 +1,26 @@
 package structure
 
+/*
+双向队列保存 LRUNode 的指针
+从头到尾使用频率：从高到低
+即队尾为最久未使用
+*/
 type LRUCache struct {
 	cap int
-	head *LruNode
-	end *LruNode
-	dataMap map[int]*LruNode
+	head *LRUNode
+	end *LRUNode
+	dataMap map[int]*LRUNode
 }
 
-type LruNode struct {
+type LRUNode struct {
 	key int
 	val int
-	pre *LruNode
-	next *LruNode
+	pre *LRUNode
+	next *LRUNode
 }
 
 func Constructor(capacity int) LRUCache {
-	cache := LRUCache{capacity, &LruNode{}, &LruNode{}, make(map[int]*LruNode, capacity)}
+	cache := LRUCache{capacity, &LRUNode{}, &LRUNode{}, make(map[int]*LRUNode, capacity)}
 	cache.head.next = cache.end
 	cache.end.pre = cache.head
 	return cache
@@ -45,7 +50,7 @@ func (this *LRUCache) Put(key int, value int)  {
 	1. 如果满了，先删除end
 	2. 插入到头部和dataMap
 	*/
-	newNode := LruNode{key: key, val: value}
+	newNode := LRUNode{key: key, val: value}
 	if len(this.dataMap) >= this.cap {
 		delete(this.dataMap, this.end.pre.key)
 		this.remove(this.end.pre)
@@ -54,7 +59,7 @@ func (this *LRUCache) Put(key int, value int)  {
 	this.dataMap[key] = &newNode
 }
 
-func (this *LRUCache) putHead(node *LruNode) {
+func (this *LRUCache) putHead(node *LRUNode) {
 	// 新增节点和head.next关联起来
 	this.head.next.pre = node
 	node.next = this.head.next
@@ -63,7 +68,7 @@ func (this *LRUCache) putHead(node *LruNode) {
 	node.pre = this.head
 }
 
-func (this *LRUCache) remove(node *LruNode) {
+func (this *LRUCache) remove(node *LRUNode) {
 	node.pre.next = node.next
 	node.next.pre = node.pre
 }

@@ -4,42 +4,35 @@ func MergeSort(arr []int) {
 	if len(arr) <= 1 {
 		return
 	}
-	mergeSort(arr, 0, len(arr)-1)
+	temp := mergeSort(arr)
+	for i := 0; i < len(temp); i++ {
+		arr[i] = temp[i]
+	}
 }
 
-func mergeSort(arr []int, p, r int) {
-	// 递归终止条件
-	if p >= r {
-		return
+func mergeSort(arr []int) []int {
+	if len(arr) <= 1 {
+		return arr
 	}
-	middle := (p + r) / 2
-	// 不断地进行左右对半划分
-	mergeSort(arr, p, middle)
-	mergeSort(arr, middle+1, r)
-	// 合并
-	merge(arr, p, middle, r)
+	middle := len(arr) / 2
+	left := Merge(arr[:middle])
+	right := Merge(arr[middle:])
+	return merge2(left, right)
 }
 // merge 从小到大合并两个有序数组
-func merge(arr []int, p, middle, r int) {
-	temp := make([]int, 0)
-	i, j:= p, middle+1
-	for i <= middle && j <= r {
-		if arr[i] > arr[j] {
-			temp = append(temp, arr[j])
-			j++
+func merge(left, right []int) []int {
+	result := make([]int, 0)
+	l, r := 0, 0
+	for l < len(left) && r < len(right) {
+		if left[l] > right[r] {
+			result = append(result, right[r])
+			r++
 		} else {
-				temp = append(temp, arr[i])
-				i++
+			result = append(result, left[l])
+			l++
 		}
 	}
-	// 把左右边剩余的数移入数组
-	if i > middle {
-		temp = append(temp, arr[j:r+1]...)
-	} else {
-		temp = append(temp, arr[i:middle+1]...)
-	}
-	// 将temp修改到arr中
-	for i, v := range temp {
-		arr[p + i] = v
-	}
+	result = append(result, left[l:]...)
+	result = append(result, right[r:]...)
+	return result
 }
